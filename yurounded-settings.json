@@ -1,0 +1,140 @@
+{
+  "settings" : [ {
+    "key" : "BackgroundColor",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "BackgroundColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorBlack",
+      "value" : 0
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "HourColor",
+    "valueType" : "number",
+    "defaultValue" : 16750950,
+    "configTitle" : "HourColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorOrange",
+      "value" : 16750950
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    }, {
+      "display" : "ColorPurple",
+      "value" : 16711935
+    }, {
+      "display" : "ColorPink",
+      "value" : 16738740
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "MinuteColor",
+    "valueType" : "number",
+    "defaultValue" : 8033196,
+    "configTitle" : "MinuteColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorBlueGray",
+      "value" : 8033196
+    }, {
+      "display" : "ColorBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorOrange",
+      "value" : 16750950
+    }, {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    }, {
+      "display" : "ColorPurple",
+      "value" : 16711935
+    }, {
+      "display" : "ColorPink",
+      "value" : 16738740
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "ShowNotificationIndicator",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "ShowNotificationIndicatorTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "ColorBlue" : "Blue",
+      "BackgroundColorTitle" : "Background Color",
+      "ShowNotificationIndicatorTitle" : "Show Notification Indicator",
+      "ColorBlueGray" : "Blue Gray",
+      "ColorBlack" : "Black",
+      "ColorOrange" : "Orange",
+      "ColorYellow" : "Yellow",
+      "AppName" : "yurounded",
+      "HourColorTitle" : "Hour Color",
+      "ColorRed" : "Red",
+      "ColorPurple" : "Purple",
+      "ColorPink" : "Pink",
+      "ColorWhite" : "White",
+      "ColorGreen" : "Green",
+      "MinuteColorTitle" : "Minute Color"
+    }
+  }
+}

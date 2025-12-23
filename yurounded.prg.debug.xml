@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\isy\Documents\GitHub\yurounded\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedApp.mc" id="1" lineNum="31" parent="globals" pc="268435457" symbol="getApp"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedApp.mc" id="1" lineNum="32" parent="globals" pc="268435467" symbol="getApp"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedBackground.mc" id="2" lineNum="6" parent="globals/Background" pc="268435478" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedApp.mc" id="3" lineNum="5" parent="globals/yuroundedApp" pc="268435490" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\isy\\Documents\\GitHub\\yurounded\\gen\\006-B3703-00\\source\\Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435502" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="5" lineNum="7" parent="globals/yuroundedView" pc="268435522" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedBackground.mc" id="6" lineNum="8" parent="globals/Background" pc="268435534" symbol="initialize"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedBackground.mc" id="6" lineNum="9" parent="globals/Background" pc="268435537" symbol="initialize"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedBackground.mc" id="6" lineNum="13" parent="globals/Background" pc="268435555" symbol="initialize"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedBackground.mc" id="7" lineNum="16" parent="globals/Background" pc="268435572" symbol="draw"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedBackground.mc" id="7" lineNum="18" parent="globals/Background" pc="268435574" symbol="draw"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedBackground.mc" id="7" lineNum="19" parent="globals/Background" pc="268435605" symbol="draw"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedApp.mc" id="9" lineNum="25" parent="globals/yuroundedApp" pc="268435614" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedApp.mc" id="9" lineNum="26" parent="globals/yuroundedApp" pc="268435616" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedApp.mc" id="10" lineNum="20" parent="globals/yuroundedApp" pc="268435628" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedApp.mc" id="10" lineNum="21" parent="globals/yuroundedApp" pc="268435630" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedApp.mc" id="11" lineNum="7" parent="globals/yuroundedApp" pc="268435656" symbol="initialize"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedApp.mc" id="11" lineNum="8" parent="globals/yuroundedApp" pc="268435658" symbol="initialize"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="17" lineNum="9" parent="globals/yuroundedView" pc="268435671" symbol="initialize"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="17" lineNum="10" parent="globals/yuroundedView" pc="268435673" symbol="initialize"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="25" parent="globals/yuroundedView" pc="268435686" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="27" parent="globals/yuroundedView" pc="268435689" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="28" parent="globals/yuroundedView" pc="268435698" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="29" parent="globals/yuroundedView" pc="268435707" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="30" parent="globals/yuroundedView" pc="268435714" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="33" parent="globals/yuroundedView" pc="268435721" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="34" parent="globals/yuroundedView" pc="268435740" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="35" parent="globals/yuroundedView" pc="268435759" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="36" parent="globals/yuroundedView" pc="268435778" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="39" parent="globals/yuroundedView" pc="268435797" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="40" parent="globals/yuroundedView" pc="268435811" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="43" parent="globals/yuroundedView" pc="268435819" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="44" parent="globals/yuroundedView" pc="268435831" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="45" parent="globals/yuroundedView" pc="268435839" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="48" parent="globals/yuroundedView" pc="268435847" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="49" parent="globals/yuroundedView" pc="268435866" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="50" parent="globals/yuroundedView" pc="268435873" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="51" parent="globals/yuroundedView" pc="268435880" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="52" parent="globals/yuroundedView" pc="268435888" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="57" parent="globals/yuroundedView" pc="268435895" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="58" parent="globals/yuroundedView" pc="268435911" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="61" parent="globals/yuroundedView" pc="268435927" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="64" parent="globals/yuroundedView" pc="268435931" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="65" parent="globals/yuroundedView" pc="268435945" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="66" parent="globals/yuroundedView" pc="268435952" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="69" parent="globals/yuroundedView" pc="268435972" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="70" parent="globals/yuroundedView" pc="268435986" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="71" parent="globals/yuroundedView" pc="268435993" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="74" parent="globals/yuroundedView" pc="268436013" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="75" parent="globals/yuroundedView" pc="268436018" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="76" parent="globals/yuroundedView" pc="268436030" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="79" parent="globals/yuroundedView" pc="268436033" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="80" parent="globals/yuroundedView" pc="268436044" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="84" parent="globals/yuroundedView" pc="268436053" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="85" parent="globals/yuroundedView" pc="268436060" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\isy\\Documents\\GitHub\\yurounded\\source\\yuroundedView.mc" id="19" lineNum="86" parent="globals/yuroundedView" pc="268436077" symbol="onUpdate"/>
+        <entry filename="c:\\Users\\isy\\Documents\\GitHub\\yurounded\\gen\\006-B3703-00\\source\\Rez.mcgen" id="20" lineNum="13" parent="globals/Rez/Layouts" pc="268436094" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\isy\\Documents\\GitHub\\yurounded\\gen\\006-B3703-00\\source\\Rez.mcgen" id="20" lineNum="14" parent="globals/Rez/Layouts" pc="268436105" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\isy\\Documents\\GitHub\\yurounded\\gen\\006-B3703-00\\source\\Rez.mcgen" id="20" lineNum="16" parent="globals/Rez/Layouts" pc="268436129" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\isy\\Documents\\GitHub\\yurounded\\gen\\006-B3703-00\\source\\Rez.mcgen" id="20" lineNum="18" parent="globals/Rez/Layouts" pc="268436245" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="18" symbol="ColorPurple"/>
+        <entry field="true" id="15" symbol="ColorGreen"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry field="true" id="21" symbol="ColorYellow"/>
+        <entry field="true" id="19" symbol="ColorRed"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="13" symbol="ColorBlue"/>
+        <entry field="true" id="10" symbol="AppName"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="16" symbol="ColorOrange"/>
+        <entry id="7" object="true" symbol="yuroundedView"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry field="true" id="14" symbol="ColorBlueGray"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="24" symbol="ShowNotificationIndicatorTitle"/>
+        <entry field="true" id="20" symbol="ColorWhite"/>
+        <entry field="true" id="12" symbol="ColorBlack"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="6" object="true" symbol="yuroundedApp"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="9" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="11" symbol="BackgroundColorTitle"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="22" symbol="HourColorTitle"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry field="true" id="17" symbol="ColorPink"/>
+        <entry id="8" module="true" symbol="Layouts"/>
+        <entry field="true" id="23" symbol="MinuteColorTitle"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="8389584" symbol="notificationCount"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435570" name="dictionary" stackId="1" startPc="268435537"/>
+        <entry arg="true" endPc="268435613" name="dc" stackId="1" startPc="268435572"/>
+        <entry arg="true" endPc="268436093" name="dc" stackId="1" startPc="268435686"/>
+        <entry endPc="268436092" name="width" stackId="2" startPc="268435689"/>
+        <entry endPc="268436092" name="height" stackId="3" startPc="268435689"/>
+        <entry endPc="268436092" name="centerX" stackId="4" startPc="268435689"/>
+        <entry endPc="268436092" name="centerY" stackId="5" startPc="268435689"/>
+        <entry endPc="268436092" name="backgroundColor" stackId="6" startPc="268435689"/>
+        <entry endPc="268436092" name="hourColor" stackId="7" startPc="268435689"/>
+        <entry endPc="268436092" name="minuteColor" stackId="8" startPc="268435689"/>
+        <entry endPc="268436092" name="showNotificationIndicator" stackId="9" startPc="268435689"/>
+        <entry endPc="268436092" name="clockTime" stackId="10" startPc="268435689"/>
+        <entry endPc="268436092" name="hours" stackId="11" startPc="268435689"/>
+        <entry endPc="268436092" name="minutes" stackId="12" startPc="268435689"/>
+        <entry endPc="268436092" name="hoursString" stackId="13" startPc="268435689"/>
+        <entry endPc="268436092" name="minutesString" stackId="14" startPc="268435689"/>
+        <entry endPc="268436092" name="largeFont" stackId="15" startPc="268435689"/>
+        <entry endPc="268436092" name="hoursY" stackId="16" startPc="268435689"/>
+        <entry endPc="268436092" name="minutesY" stackId="17" startPc="268435689"/>
+        <entry endPc="268436092" name="deviceSettings" stackId="18" startPc="268436018"/>
+        <entry endPc="268436092" name="notificationCount" stackId="19" startPc="268436018"/>
+        <entry arg="true" endPc="268436259" name="dc" stackId="1" startPc="268436094"/>
+    </localVars>
+    <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3703-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorPink"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlueGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorGreen"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorPurple"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MinuteColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorYellow"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ShowNotificationIndicatorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="HourColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorOrange"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Background" offset="134" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/yuroundedApp" offset="187" parentId="globals" symbolId="yuroundedApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="267" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/yuroundedView" offset="320" parentId="globals" symbolId="yuroundedView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="418" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="453" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="488" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435477" name="getApp" startPc="268435457">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435489" name="&lt;init&gt;" parent="Background" startPc="268435478">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435501" name="&lt;init&gt;" parent="yuroundedApp" startPc="268435490">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435521" name="&lt;init&gt;" parent="Rez" startPc="268435502">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435533" name="&lt;init&gt;" parent="yuroundedView" startPc="268435522">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435571" name="initialize" parent="Background" startPc="268435534">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435613" name="draw" parent="Background" startPc="268435572">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="yuroundedApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435627" name="onSettingsChanged" parent="yuroundedApp" startPc="268435614">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435655" name="getInitialView" parent="yuroundedApp" startPc="268435628">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435670" name="initialize" parent="yuroundedApp" startPc="268435656">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="yuroundedApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="yuroundedView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="yuroundedView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="yuroundedView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="yuroundedView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435685" name="initialize" parent="yuroundedView" startPc="268435671">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="yuroundedView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436093" name="onUpdate" parent="yuroundedView" startPc="268435686">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436259" name="WatchFace" parent="Layouts" startPc="268436094">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

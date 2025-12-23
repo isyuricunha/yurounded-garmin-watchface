@@ -1,0 +1,1755 @@
+[ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 12; @symbol_moduledef = [Layouts,12,11,18]; ]
+    module Layouts {
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 13; @symbol_functiondef = [WatchFace,13,17,26]; @symbol_param<0> = [dc,13,27,29]; @symbol_param<0>_type<0> = [Graphics,13,33,41]; @symbol_param<0>_type<1> = [Dc,13,42,44]; @symbol_return<0> = [Array,13,49,54]; @symbol_return<1> = [WatchUi,13,55,62]; @symbol_return<2> = [Drawable,13,63,71]; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c__Users_isy_Documents_GitHub_yurounded_garmin_watchface_bin_gen_006_B3703_00_source_Rez_mcgen_13_73_19_8_start:
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 14 12 ]
+            [ "c__Users_isy_Documents_GitHub_yurounded_garmin_watchface_bin_gen_006_B3703_00_source_Rez_mcgen_13_73_19_8_start" "c__Users_isy_Documents_GitHub_yurounded_garmin_watchface_bin_gen_006_B3703_00_source_Rez_mcgen_13_73_19_8_stop" ]
+            %rez_cmp_local_custom_drawable_11939594661139614796.1 = local;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %rez_cmp_local_custom_drawable_11939594661139614796.1 14 16 66 ];
+            symbol [ Background %tmp.4 14 73 83 ];
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_11939594661139614796.1 %tmp.1;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %rez_cmp_local_custom_drawable_11939594661139614796.1 14 16 66 ];
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 16 12 ]
+            [ "c__Users_isy_Documents_GitHub_yurounded_garmin_watchface_bin_gen_006_B3703_00_source_Rez_mcgen_13_73_19_8_start" "c__Users_isy_Documents_GitHub_yurounded_garmin_watchface_bin_gen_006_B3703_00_source_Rez_mcgen_13_73_19_8_stop" ]
+            %rez_cmp_local_text_TimeLabel.2 = local;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.2 16 16 44 ];
+            symbol [ WatchUi %tmp.7 16 51 58 ];
+            %tmp.7 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.8 16 59 63 ];
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            symbol [ identifier %tmp.11 16 66 76 const ];
+            %tmp.12 = "TimeLabel";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            symbol [ color %tmp.16 16 92 97 const ];
+            symbol [ Graphics %tmp.17 16 99 107 ];
+            %tmp.17 = getm $.Toybox.Graphics;
+            symbol [ COLOR_BLUE %tmp.18 16 108 118 ];
+            %tmp.18 = getv %tmp.17 :COLOR_BLUE;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            symbol [ locX %tmp.22 16 121 125 const ];
+            %tmp.23 = lgetv %dc;
+            symbol [ dc %tmp.23 16 128 130 ];
+            symbol [ getWidth %tmp.24 16 131 139 ];
+            %tmp.24 = getv function %tmp.23 :getWidth;
+            %tmp.25 = invoke %tmp.23 %tmp.24();
+            %tmp.26 = 0.5;
+            %tmp.27 = mul %tmp.25 %tmp.26;
+            %tmp.28 = dup %tmp.20;
+            %tmp.29 = aputv %tmp.28 %tmp.22 %tmp.27;
+            %tmp.31 = const :locY;
+            symbol [ locY %tmp.31 16 151 155 const ];
+            %tmp.32 = lgetv %dc;
+            symbol [ dc %tmp.32 16 159 161 ];
+            symbol [ getHeight %tmp.33 16 162 171 ];
+            %tmp.33 = getv function %tmp.32 :getHeight;
+            %tmp.34 = invoke %tmp.32 %tmp.33();
+            %tmp.35 = lgetv %dc;
+            symbol [ dc %tmp.35 16 176 178 ];
+            symbol [ getFontHeight %tmp.36 16 179 192 ];
+            %tmp.36 = getv function %tmp.35 :getFontHeight;
+            symbol [ Graphics %tmp.37 16 193 201 ];
+            %tmp.37 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.38 16 202 212 ];
+            %tmp.38 = getv %tmp.37 :FONT_LARGE;
+            %tmp.39 = invoke %tmp.35 %tmp.36(%tmp.38);
+            %tmp.40 = sub %tmp.34 %tmp.39;
+            %tmp.41 = 0.5;
+            %tmp.42 = mul %tmp.40 %tmp.41;
+            %tmp.43 = dup %tmp.29;
+            %tmp.44 = aputv %tmp.43 %tmp.31 %tmp.42;
+            %tmp.46 = const :justification;
+            symbol [ justification %tmp.46 16 224 237 const ];
+            symbol [ Graphics %tmp.47 16 239 247 ];
+            %tmp.47 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.48 16 248 267 ];
+            %tmp.48 = getv %tmp.47 :TEXT_JUSTIFY_CENTER;
+            %tmp.49 = dup %tmp.44;
+            %tmp.50 = aputv %tmp.49 %tmp.46 %tmp.48;
+            %tmp.52 = const :font;
+            symbol [ font %tmp.52 16 270 274 const ];
+            symbol [ Graphics %tmp.53 16 276 284 ];
+            %tmp.53 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.54 16 285 295 ];
+            %tmp.54 = getv %tmp.53 :FONT_LARGE;
+            %tmp.55 = dup %tmp.50;
+            %tmp.56 = aputv %tmp.55 %tmp.52 %tmp.54;
+            %tmp.5 = newc %tmp.8 (%tmp.56);
+            lputv %rez_cmp_local_text_TimeLabel.2 %tmp.5;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.2 16 16 44 ];
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 18 12 ]
+            %tmp.57 = newa 2 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.57 18 105 110 ];
+            symbol [ WatchUi %tmp.57 18 111 118 ];
+            symbol [ Drawable %tmp.57 18 119 127 ];
+            %tmp.58 = lgetv %rez_cmp_local_custom_drawable_11939594661139614796.1;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %tmp.58 18 20 70 ];
+            %tmp.59 = dup %tmp.57;
+            %tmp.60 = aputv %tmp.59 0 %tmp.58;
+            %tmp.61 = lgetv %rez_cmp_local_text_TimeLabel.2;
+            symbol [ rez_cmp_local_text_TimeLabel %tmp.61 18 72 100 ];
+            %tmp.62 = dup %tmp.60;
+            %tmp.63 = aputv %tmp.62 1 %tmp.61;
+            ret %tmp.63;
+c__Users_isy_Documents_GitHub_yurounded_garmin_watchface_bin_gen_006_B3703_00_source_Rez_mcgen_13_73_19_8_stop:
+        }
+    }
+    [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 22; @symbol_moduledef = [Strings,22,11,18]; ]
+    module Strings {
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 22; ]
+        <init> {
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 23; @position = 27; initialized = true; @symbol_vardef = [DatePositionRight,23,27,44]; @symbol_type<0> = [ResourceId,23,48,58]; ]
+        var DatePositionRight as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 24; @position = 27; initialized = true; @symbol_vardef = [BluetoothPositionTitle,24,27,49]; @symbol_type<0> = [ResourceId,24,53,63]; ]
+        var BluetoothPositionTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 25; @position = 27; initialized = true; @symbol_vardef = [HourColorTitle,25,27,41]; @symbol_type<0> = [ResourceId,25,45,55]; ]
+        var HourColorTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 26; @position = 27; initialized = true; @symbol_vardef = [BatteryDisplayStyleTitle,26,27,51]; @symbol_type<0> = [ResourceId,26,55,65]; ]
+        var BatteryDisplayStyleTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 27; @position = 27; initialized = true; @symbol_vardef = [ColorRed,27,27,35]; @symbol_type<0> = [ResourceId,27,39,49]; ]
+        var ColorRed as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 28; @position = 27; initialized = true; @symbol_vardef = [BluetoothPositionTopRight,28,27,52]; @symbol_type<0> = [ResourceId,28,56,66]; ]
+        var BluetoothPositionTopRight as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 29; @position = 27; initialized = true; @symbol_vardef = [DateFormatWeekday,29,27,44]; @symbol_type<0> = [ResourceId,29,48,58]; ]
+        var DateFormatWeekday as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 30; @position = 27; initialized = true; @symbol_vardef = [BatteryStyleIcon,30,27,43]; @symbol_type<0> = [ResourceId,30,47,57]; ]
+        var BatteryStyleIcon as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 31; @position = 27; initialized = true; @symbol_vardef = [ColorWhite,31,27,37]; @symbol_type<0> = [ResourceId,31,41,51]; ]
+        var ColorWhite as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 32; @position = 27; initialized = true; @symbol_vardef = [BatteryFontSizeTitle,32,27,47]; @symbol_type<0> = [ResourceId,32,51,61]; ]
+        var BatteryFontSizeTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 33; @position = 27; initialized = true; @symbol_vardef = [FontSizeSmall,33,27,40]; @symbol_type<0> = [ResourceId,33,44,54]; ]
+        var FontSizeSmall as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 34; @position = 27; initialized = true; @symbol_vardef = [BluetoothPositionBottomRight,34,27,55]; @symbol_type<0> = [ResourceId,34,59,69]; ]
+        var BluetoothPositionBottomRight as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 35; @position = 27; initialized = true; @symbol_vardef = [ColorOrange,35,27,38]; @symbol_type<0> = [ResourceId,35,42,52]; ]
+        var ColorOrange as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 36; @position = 27; initialized = true; @symbol_vardef = [FontSizeMedium,36,27,41]; @symbol_type<0> = [ResourceId,36,45,55]; ]
+        var FontSizeMedium as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 37; @position = 27; initialized = true; @symbol_vardef = [BatteryPositionTop,37,27,45]; @symbol_type<0> = [ResourceId,37,49,59]; ]
+        var BatteryPositionTop as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; @symbol_vardef = [ColorPurple,38,27,38]; @symbol_type<0> = [ResourceId,38,42,52]; ]
+        var ColorPurple as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 39; @position = 27; initialized = true; @symbol_vardef = [ColorTeal,39,27,36]; @symbol_type<0> = [ResourceId,39,40,50]; ]
+        var ColorTeal as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 40; @position = 27; initialized = true; @symbol_vardef = [BatteryPositionTitle,40,27,47]; @symbol_type<0> = [ResourceId,40,51,61]; ]
+        var BatteryPositionTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 41; @position = 27; initialized = true; @symbol_vardef = [DateFormatWeekdayShort,41,27,49]; @symbol_type<0> = [ResourceId,41,53,63]; ]
+        var DateFormatWeekdayShort as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 42; @position = 27; initialized = true; @symbol_vardef = [ColorBlue,42,27,36]; @symbol_type<0> = [ResourceId,42,40,50]; ]
+        var ColorBlue as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 43; @position = 27; initialized = true; @symbol_vardef = [DatePositionTop,43,27,42]; @symbol_type<0> = [ResourceId,43,46,56]; ]
+        var DatePositionTop as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 44; @position = 27; initialized = true; @symbol_vardef = [BackgroundColorTitle,44,27,47]; @symbol_type<0> = [ResourceId,44,51,61]; ]
+        var BackgroundColorTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 45; @position = 27; initialized = true; @symbol_vardef = [BatteryStylePercentage,45,27,49]; @symbol_type<0> = [ResourceId,45,53,63]; ]
+        var BatteryStylePercentage as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 46; @position = 27; initialized = true; @symbol_vardef = [BluetoothPositionTopLeft,46,27,51]; @symbol_type<0> = [ResourceId,46,55,65]; ]
+        var BluetoothPositionTopLeft as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 47; @position = 27; initialized = true; @symbol_vardef = [ColorYellow,47,27,38]; @symbol_type<0> = [ResourceId,47,42,52]; ]
+        var ColorYellow as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 48; @position = 27; initialized = true; @symbol_vardef = [DateFormatDayMonth,48,27,45]; @symbol_type<0> = [ResourceId,48,49,59]; ]
+        var DateFormatDayMonth as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 49; @position = 27; initialized = true; @symbol_vardef = [AppName,49,27,34]; @symbol_type<0> = [ResourceId,49,38,48]; ]
+        var AppName as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 50; @position = 27; initialized = true; @symbol_vardef = [BatteryPositionBottom,50,27,48]; @symbol_type<0> = [ResourceId,50,52,62]; ]
+        var BatteryPositionBottom as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 51; @position = 27; initialized = true; @symbol_vardef = [SecondsColorTitle,51,27,44]; @symbol_type<0> = [ResourceId,51,48,58]; ]
+        var SecondsColorTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 52; @position = 27; initialized = true; @symbol_vardef = [BatteryPositionMiddle,52,27,48]; @symbol_type<0> = [ResourceId,52,52,62]; ]
+        var BatteryPositionMiddle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 53; @position = 27; initialized = true; @symbol_vardef = [ShowBluetoothTitle,53,27,45]; @symbol_type<0> = [ResourceId,53,49,59]; ]
+        var ShowBluetoothTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 54; @position = 27; initialized = true; @symbol_vardef = [ColorPink,54,27,36]; @symbol_type<0> = [ResourceId,54,40,50]; ]
+        var ColorPink as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 55; @position = 27; initialized = true; @symbol_vardef = [DatePositionLeft,55,27,43]; @symbol_type<0> = [ResourceId,55,47,57]; ]
+        var DatePositionLeft as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 56; @position = 27; initialized = true; @symbol_vardef = [ColorGreen,56,27,37]; @symbol_type<0> = [ResourceId,56,41,51]; ]
+        var ColorGreen as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 57; @position = 27; initialized = true; @symbol_vardef = [ShowDateTitle,57,27,40]; @symbol_type<0> = [ResourceId,57,44,54]; ]
+        var ShowDateTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 58; @position = 27; initialized = true; @symbol_vardef = [DatePositionTitle,58,27,44]; @symbol_type<0> = [ResourceId,58,48,58]; ]
+        var DatePositionTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 59; @position = 27; initialized = true; @symbol_vardef = [MinuteColorTitle,59,27,43]; @symbol_type<0> = [ResourceId,59,47,57]; ]
+        var MinuteColorTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 60; @position = 27; initialized = true; @symbol_vardef = [ColorLightGray,60,27,41]; @symbol_type<0> = [ResourceId,60,45,55]; ]
+        var ColorLightGray as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 61; @position = 27; initialized = true; @symbol_vardef = [DateFormatMonthDay,61,27,45]; @symbol_type<0> = [ResourceId,61,49,59]; ]
+        var DateFormatMonthDay as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 62; @position = 27; initialized = true; @symbol_vardef = [BluetoothPositionBottomLeft,62,27,54]; @symbol_type<0> = [ResourceId,62,58,68]; ]
+        var BluetoothPositionBottomLeft as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 63; @position = 27; initialized = true; @symbol_vardef = [ShowNotificationIndicatorTitle,63,27,57]; @symbol_type<0> = [ResourceId,63,61,71]; ]
+        var ShowNotificationIndicatorTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 64; @position = 27; initialized = true; @symbol_vardef = [ColorDarkGray,64,27,40]; @symbol_type<0> = [ResourceId,64,44,54]; ]
+        var ColorDarkGray as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 65; @position = 27; initialized = true; @symbol_vardef = [ColorBlueGray,65,27,40]; @symbol_type<0> = [ResourceId,65,44,54]; ]
+        var ColorBlueGray as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 66; @position = 27; initialized = true; @symbol_vardef = [BluetoothColorTitle,66,27,46]; @symbol_type<0> = [ResourceId,66,50,60]; ]
+        var BluetoothColorTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 67; @position = 27; initialized = true; @symbol_vardef = [ColorBlack,67,27,37]; @symbol_type<0> = [ResourceId,67,41,51]; ]
+        var ColorBlack as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 68; @position = 27; initialized = true; @symbol_vardef = [FontSizeLarge,68,27,40]; @symbol_type<0> = [ResourceId,68,44,54]; ]
+        var FontSizeLarge as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 69; @position = 27; initialized = true; @symbol_vardef = [ColorAuto,69,27,36]; @symbol_type<0> = [ResourceId,69,40,50]; ]
+        var ColorAuto as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 70; @position = 27; initialized = true; @symbol_vardef = [ShowBatteryTitle,70,27,43]; @symbol_type<0> = [ResourceId,70,47,57]; ]
+        var ShowBatteryTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 71; @position = 27; initialized = true; @symbol_vardef = [BatteryColorTitle,71,27,44]; @symbol_type<0> = [ResourceId,71,48,58]; ]
+        var BatteryColorTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 72; @position = 27; initialized = true; @symbol_vardef = [DateFormatTitle,72,27,42]; @symbol_type<0> = [ResourceId,72,46,56]; ]
+        var DateFormatTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 73; @position = 27; initialized = true; @symbol_vardef = [ShowSecondsTitle,73,27,43]; @symbol_type<0> = [ResourceId,73,47,57]; ]
+        var ShowSecondsTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 74; @position = 27; initialized = true; @symbol_vardef = [DatePositionBottom,74,27,45]; @symbol_type<0> = [ResourceId,74,49,59]; ]
+        var DatePositionBottom as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 75; @position = 27; initialized = true; @symbol_vardef = [DateColorTitle,75,27,41]; @symbol_type<0> = [ResourceId,75,45,55]; ]
+        var DateColorTitle as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 76; @position = 27; initialized = true; @symbol_vardef = [ColorCyan,76,27,36]; @symbol_type<0> = [ResourceId,76,40,50]; ]
+        var ColorCyan as ResourceId;
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 77; @position = 27; initialized = true; @symbol_vardef = [ColorLightBlue,77,27,41]; @symbol_type<0> = [ResourceId,77,45,55]; ]
+        var ColorLightBlue as ResourceId;
+    }
+    [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 80; @symbol_moduledef = [Styles,80,11,17]; ]
+    module Styles {
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 80; ]
+        <init> {
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 81; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,81,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 81; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [exclude,82,18,25]; @symbol_type<0> = [Boolean,82,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 85; @symbol_moduledef = [system_size__menu_header,85,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 85; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 86; @position = 18; @symbol_constdef = [width,86,18,23]; @symbol_type<0> = [Number,86,27,33]; ]
+            const width as Number = 416;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [height,87,18,24]; @symbol_type<0> = [Number,87,28,34]; ]
+            const height as Number = 95;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 90; @symbol_moduledef = [system_loc__hint_button_left_bottom,90,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 90; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 91; @position = 18; @symbol_constdef = [exclude,91,18,25]; @symbol_type<0> = [Boolean,91,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 94; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,94,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 94; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 95; @position = 18; @symbol_constdef = [exclude,95,18,25]; @symbol_type<0> = [Boolean,95,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 98; @symbol_moduledef = [prompt_loc__body_no_title,98,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 98; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 99; @position = 18; @symbol_constdef = [x,99,18,19]; @symbol_type<0> = [Number,99,23,29]; ]
+            const x as Number = 42;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 100; @position = 18; @symbol_constdef = [y,100,18,19]; @symbol_type<0> = [Number,100,23,29]; ]
+            const y as Number = 62;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 103; @symbol_moduledef = [system_icon_dark__about,103,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 103; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 104; @position = 18; @symbol_constdef = [filename,104,18,26]; @symbol_type<0> = [String,104,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__about.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 105; @position = 18; @symbol_constdef = [compress,105,18,26]; @symbol_type<0> = [String,105,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 106; @position = 18; @symbol_constdef = [dithering,106,18,27]; @symbol_type<0> = [String,106,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [automaticPalette,107,18,34]; @symbol_type<0> = [String,107,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 108; @position = 18; @symbol_constdef = [packingFormat,108,18,31]; @symbol_type<0> = [String,108,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 111; @symbol_moduledef = [system_icon_light__question,111,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 111; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 112; @position = 18; @symbol_constdef = [filename,112,18,26]; @symbol_type<0> = [String,112,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__question.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [compress,113,18,26]; @symbol_type<0> = [String,113,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [dithering,114,18,27]; @symbol_type<0> = [String,114,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 115; @position = 18; @symbol_constdef = [automaticPalette,115,18,34]; @symbol_type<0> = [String,115,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 116; @position = 18; @symbol_constdef = [packingFormat,116,18,31]; @symbol_type<0> = [String,116,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 119; @symbol_moduledef = [system_loc__hint_button_left_top,119,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 119; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 120; @position = 18; @symbol_constdef = [exclude,120,18,25]; @symbol_type<0> = [Boolean,120,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 123; @symbol_moduledef = [prompt_font__title,123,15,33]; ]
+        module prompt_font__title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 123; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 124 18 ]
+                symbol [ Graphics %tmp.64 124 34 42 ];
+                %tmp.64 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.65 124 43 62 ];
+                %tmp.65 = getv %tmp.64 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.66 124 63 71 ];
+                %tmp.66 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.67 124 72 92 ];
+                %tmp.67 = getv %tmp.66 :TEXT_JUSTIFY_VCENTER;
+                %tmp.68 = bitor %tmp.65 %tmp.67;
+                putv self :justification %tmp.68;
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 125 18 ]
+                symbol [ Graphics %tmp.69 125 25 33 ];
+                %tmp.69 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.70 125 34 44 ];
+                %tmp.70 = getv %tmp.69 :FONT_XTINY;
+                putv self :font %tmp.70;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [justification,124,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 125; @position = 18; @symbol_constdef = [font,125,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 128; @symbol_moduledef = [system_icon_dark__discard,128,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 128; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [filename,129,18,26]; @symbol_type<0> = [String,129,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__discard.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [compress,130,18,26]; @symbol_type<0> = [String,130,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 131; @position = 18; @symbol_constdef = [dithering,131,18,27]; @symbol_type<0> = [String,131,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 132; @position = 18; @symbol_constdef = [automaticPalette,132,18,34]; @symbol_type<0> = [String,132,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 133; @position = 18; @symbol_constdef = [packingFormat,133,18,31]; @symbol_type<0> = [String,133,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 136; @symbol_moduledef = [system_size__menu_item,136,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 136; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 137; @position = 18; @symbol_constdef = [width,137,18,23]; @symbol_type<0> = [Number,137,27,33]; ]
+            const width as Number = 416;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 138; @position = 18; @symbol_constdef = [height,138,18,24]; @symbol_type<0> = [Number,138,28,34]; ]
+            const height as Number = 105;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 141; @symbol_moduledef = [system_color_dark__text,141,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 141; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 143 18 ]
+                symbol [ Graphics %tmp.71 143 31 39 ];
+                %tmp.71 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.72 143 40 57 ];
+                %tmp.72 = getv %tmp.71 :COLOR_TRANSPARENT;
+                putv self :background %tmp.72;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 142; @position = 18; @symbol_constdef = [color,142,18,23]; @symbol_type<0> = [Number,142,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 143; @position = 18; @symbol_constdef = [background,143,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 146; @symbol_moduledef = [system_icon_destructive__discard,146,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 146; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 147; @position = 18; @symbol_constdef = [filename,147,18,26]; @symbol_type<0> = [String,147,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__discard.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 148; @position = 18; @symbol_constdef = [dithering,148,18,27]; @symbol_type<0> = [String,148,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [packingFormat,149,18,31]; @symbol_type<0> = [String,149,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 152; @symbol_moduledef = [system_icon_dark__hint_action_menu,152,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 152; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 153; @position = 18; @symbol_constdef = [filename,153,18,26]; @symbol_type<0> = [String,153,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__hint_action_menu.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 154; @position = 18; @symbol_constdef = [dithering,154,18,27]; @symbol_type<0> = [String,154,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 155; @position = 18; @symbol_constdef = [packingFormat,155,18,31]; @symbol_type<0> = [String,155,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 158; @symbol_moduledef = [prompt_size__title,158,15,33]; ]
+        module prompt_size__title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 158; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 159; @position = 18; @symbol_constdef = [width,159,18,23]; @symbol_type<0> = [Number,159,27,33]; ]
+            const width as Number = 176;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 160; @position = 18; @symbol_constdef = [height,160,18,24]; @symbol_type<0> = [Number,160,28,34]; ]
+            const height as Number = 75;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 163; @symbol_moduledef = [confirmation_font__body,163,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 163; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 164 18 ]
+                symbol [ Graphics %tmp.73 164 34 42 ];
+                %tmp.73 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.74 164 43 62 ];
+                %tmp.74 = getv %tmp.73 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.75 164 63 71 ];
+                %tmp.75 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.76 164 72 92 ];
+                %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_VCENTER;
+                %tmp.77 = bitor %tmp.74 %tmp.76;
+                putv self :justification %tmp.77;
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 165 18 ]
+                symbol [ Graphics %tmp.78 165 25 33 ];
+                %tmp.78 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.79 165 34 43 ];
+                %tmp.79 = getv %tmp.78 :FONT_TINY;
+                putv self :font %tmp.79;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [justification,164,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 165; @position = 18; @symbol_constdef = [font,165,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 168; @symbol_moduledef = [system_color_dark__background,168,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 168; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 169; @position = 18; @symbol_constdef = [color,169,18,23]; @symbol_type<0> = [Number,169,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [background,170,18,28]; @symbol_type<0> = [Number,170,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 173; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,173,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 173; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 174; @position = 18; @symbol_constdef = [exclude,174,18,25]; @symbol_type<0> = [Boolean,174,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 177; @symbol_moduledef = [system_size__launch_icon,177,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 177; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 178; @position = 18; @symbol_constdef = [scaleX,178,18,24]; @symbol_type<0> = [Number,178,28,34]; ]
+            const scaleX as Number = 70;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 179; @position = 18; @symbol_constdef = [scaleY,179,18,24]; @symbol_type<0> = [Number,179,28,34]; ]
+            const scaleY as Number = 70;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 180; @position = 18; @symbol_constdef = [scaleRelativeTo,180,18,33]; @symbol_type<0> = [String,180,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 183; @symbol_moduledef = [confirmation_input__confirm,183,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 183; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 184; @position = 18; @symbol_constdef = [y1,184,18,20]; @symbol_type<0> = [Number,184,24,30]; ]
+            const y1 as Number = 322;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 185; @position = 18; @symbol_constdef = [x1,185,18,20]; @symbol_type<0> = [Number,185,24,30]; ]
+            const x1 as Number = 79;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 186; @position = 18; @symbol_constdef = [y2,186,18,20]; @symbol_type<0> = [Number,186,24,30]; ]
+            const y2 as Number = 416;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 187; @position = 18; @symbol_constdef = [x2,187,18,20]; @symbol_type<0> = [Number,187,24,30]; ]
+            const x2 as Number = 311;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 190; @symbol_moduledef = [prompt_font__body_with_title,190,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 190; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 191 18 ]
+                symbol [ Graphics %tmp.80 191 34 42 ];
+                %tmp.80 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.81 191 43 62 ];
+                %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.81;
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 192 18 ]
+                symbol [ Graphics %tmp.82 192 25 33 ];
+                %tmp.82 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.83 192 34 43 ];
+                %tmp.83 = getv %tmp.82 :FONT_TINY;
+                putv self :font %tmp.83;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 191; @position = 18; @symbol_constdef = [justification,191,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 192; @position = 18; @symbol_constdef = [font,192,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 195; @symbol_moduledef = [confirmation_loc__body,195,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 195; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 196; @position = 18; @symbol_constdef = [x,196,18,19]; @symbol_type<0> = [Number,196,23,29]; ]
+            const x as Number = 85;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 197; @position = 18; @symbol_constdef = [y,197,18,19]; @symbol_type<0> = [Number,197,23,29]; ]
+            const y as Number = 83;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 200; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,200,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 200; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 201; @position = 18; @symbol_constdef = [exclude,201,18,25]; @symbol_type<0> = [Boolean,201,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 204; @symbol_moduledef = [prompt_color_dark__background,204,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 204; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 205; @position = 18; @symbol_constdef = [color,205,18,23]; @symbol_type<0> = [Number,205,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 206; @position = 18; @symbol_constdef = [background,206,18,28]; @symbol_type<0> = [Number,206,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 209; @symbol_moduledef = [system_icon_destructive__hint_action_menu,209,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 209; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 210; @position = 18; @symbol_constdef = [filename,210,18,26]; @symbol_type<0> = [String,210,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__hint_action_menu.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 211; @position = 18; @symbol_constdef = [dithering,211,18,27]; @symbol_type<0> = [String,211,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 212; @position = 18; @symbol_constdef = [packingFormat,212,18,31]; @symbol_type<0> = [String,212,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 215; @symbol_moduledef = [system_loc__hint_action_menu,215,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 215; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 216; @position = 18; @symbol_constdef = [x,216,18,19]; @symbol_type<0> = [Number,216,23,29]; ]
+            const x as Number = 208;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [horizontalJustification,217,18,41]; @symbol_type<0> = [String,217,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 218; @position = 18; @symbol_constdef = [y,218,18,19]; @symbol_type<0> = [Number,218,23,29]; ]
+            const y as Number = 332;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 221; @symbol_moduledef = [confirmation_icon__hint_confirm,221,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 221; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [filename,222,18,26]; @symbol_type<0> = [String,222,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 223; @position = 18; @symbol_constdef = [dithering,223,18,27]; @symbol_type<0> = [String,223,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 224; @position = 18; @symbol_constdef = [packingFormat,224,18,31]; @symbol_type<0> = [String,224,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 227; @symbol_moduledef = [system_loc__hint_button_left_middle,227,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 227; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 228; @position = 18; @symbol_constdef = [exclude,228,18,25]; @symbol_type<0> = [Boolean,228,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 231; @symbol_moduledef = [prompt_size__body_no_title,231,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 231; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [width,232,18,23]; @symbol_type<0> = [Number,232,27,33]; ]
+            const width as Number = 333;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 233; @position = 18; @symbol_constdef = [height,233,18,24]; @symbol_type<0> = [Number,233,28,34]; ]
+            const height as Number = 270;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 236; @symbol_moduledef = [system_icon_light__hint_button_left_top,236,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 236; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 237; @position = 18; @symbol_constdef = [exclude,237,18,25]; @symbol_type<0> = [Boolean,237,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 240; @symbol_moduledef = [prompt_color_light__background,240,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 240; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 241; @position = 18; @symbol_constdef = [color,241,18,23]; @symbol_type<0> = [Number,241,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 242; @position = 18; @symbol_constdef = [background,242,18,28]; @symbol_type<0> = [Number,242,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 245; @symbol_moduledef = [confirmation_input__delete,245,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 245; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 246 18 ]
+                symbol [ WatchUi %tmp.84 246 27 34 ];
+                %tmp.84 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.85 246 35 44 ];
+                %tmp.85 = getv %tmp.84 :KEY_ENTER;
+                putv self :button %tmp.85;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [button,246,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 249; @symbol_moduledef = [system_icon_dark__hint_button_left_top,249,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 249; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [exclude,250,18,25]; @symbol_type<0> = [Boolean,250,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 253; @symbol_moduledef = [system_input__action_menu,253,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 253; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [y1,254,18,20]; @symbol_type<0> = [Number,254,24,30]; ]
+            const y1 as Number = 338;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [x1,255,18,20]; @symbol_type<0> = [Number,255,24,30]; ]
+            const x1 as Number = 0;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [y2,256,18,20]; @symbol_type<0> = [Number,256,24,30]; ]
+            const y2 as Number = 390;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 257; @position = 18; @symbol_constdef = [x2,257,18,20]; @symbol_type<0> = [Number,257,24,30]; ]
+            const x2 as Number = 390;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 260; @symbol_moduledef = [system_icon_light__save,260,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 260; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 261; @position = 18; @symbol_constdef = [filename,261,18,26]; @symbol_type<0> = [String,261,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__save.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 262; @position = 18; @symbol_constdef = [compress,262,18,26]; @symbol_type<0> = [String,262,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 263; @position = 18; @symbol_constdef = [dithering,263,18,27]; @symbol_type<0> = [String,263,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 264; @position = 18; @symbol_constdef = [automaticPalette,264,18,34]; @symbol_type<0> = [String,264,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [packingFormat,265,18,31]; @symbol_type<0> = [String,265,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 268; @symbol_moduledef = [prompt_color_light__body,268,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 268; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 270 18 ]
+                symbol [ Graphics %tmp.86 270 31 39 ];
+                %tmp.86 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.87 270 40 57 ];
+                %tmp.87 = getv %tmp.86 :COLOR_TRANSPARENT;
+                putv self :background %tmp.87;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 269; @position = 18; @symbol_constdef = [color,269,18,23]; @symbol_type<0> = [Number,269,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [background,270,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 273; @symbol_moduledef = [system_loc__subwindow,273,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 273; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [exclude,274,18,25]; @symbol_type<0> = [Boolean,274,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 277; @symbol_moduledef = [system_icon_light__warning,277,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 277; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 278; @position = 18; @symbol_constdef = [filename,278,18,26]; @symbol_type<0> = [String,278,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__warning.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [compress,279,18,26]; @symbol_type<0> = [String,279,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [dithering,280,18,27]; @symbol_type<0> = [String,280,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [automaticPalette,281,18,34]; @symbol_type<0> = [String,281,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 282; @position = 18; @symbol_constdef = [packingFormat,282,18,31]; @symbol_type<0> = [String,282,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 285; @symbol_moduledef = [confirmation_color_light__body,285,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 285; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 287 18 ]
+                symbol [ Graphics %tmp.88 287 31 39 ];
+                %tmp.88 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.89 287 40 57 ];
+                %tmp.89 = getv %tmp.88 :COLOR_TRANSPARENT;
+                putv self :background %tmp.89;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [color,286,18,23]; @symbol_type<0> = [Number,286,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 287; @position = 18; @symbol_constdef = [background,287,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 290; @symbol_moduledef = [confirmation_icon_light__hint_keep,290,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 290; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 291; @position = 18; @symbol_constdef = [filename,291,18,26]; @symbol_type<0> = [String,291,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 292; @position = 18; @symbol_constdef = [dithering,292,18,27]; @symbol_type<0> = [String,292,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [packingFormat,293,18,31]; @symbol_type<0> = [String,293,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 296; @symbol_moduledef = [activity_color_light__background,296,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 296; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 297; @position = 18; @symbol_constdef = [color,297,18,23]; @symbol_type<0> = [Number,297,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 298; @position = 18; @symbol_constdef = [background,298,18,28]; @symbol_type<0> = [Number,298,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 301; @symbol_moduledef = [system_icon_positive__hint_button_right_top,301,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 301; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 302; @position = 18; @symbol_constdef = [filename,302,18,26]; @symbol_type<0> = [String,302,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 303; @position = 18; @symbol_constdef = [dithering,303,18,27]; @symbol_type<0> = [String,303,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 304; @position = 18; @symbol_constdef = [packingFormat,304,18,31]; @symbol_type<0> = [String,304,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 307; @symbol_moduledef = [system_size__screen,307,15,34]; ]
+        module system_size__screen {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 307; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 308; @position = 18; @symbol_constdef = [width,308,18,23]; @symbol_type<0> = [Number,308,27,33]; ]
+            const width as Number = 416;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 309; @position = 18; @symbol_constdef = [height,309,18,24]; @symbol_type<0> = [Number,309,28,34]; ]
+            const height as Number = 416;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 312; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,312,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 312; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 313; @position = 18; @symbol_constdef = [filename,313,18,26]; @symbol_type<0> = [String,313,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [dithering,314,18,27]; @symbol_type<0> = [String,314,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 315; @position = 18; @symbol_constdef = [packingFormat,315,18,31]; @symbol_type<0> = [String,315,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 318; @symbol_moduledef = [system_color_light__background,318,15,45]; ]
+        module system_color_light__background {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 318; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 319; @position = 18; @symbol_constdef = [color,319,18,23]; @symbol_type<0> = [Number,319,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 320; @position = 18; @symbol_constdef = [background,320,18,28]; @symbol_type<0> = [Number,320,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 323; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,323,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 323; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [filename,324,18,26]; @symbol_type<0> = [String,324,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [dithering,325,18,27]; @symbol_type<0> = [String,325,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 326; @position = 18; @symbol_constdef = [packingFormat,326,18,31]; @symbol_type<0> = [String,326,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 329; @symbol_moduledef = [confirmation_loc__hint_confirm,329,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 329; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 330; @position = 18; @symbol_constdef = [x,330,18,19]; @symbol_type<0> = [Number,330,23,29]; ]
+            const x as Number = 208;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 331; @position = 18; @symbol_constdef = [horizontalJustification,331,18,41]; @symbol_type<0> = [String,331,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 332; @position = 18; @symbol_constdef = [y,332,18,19]; @symbol_type<0> = [Number,332,23,29]; ]
+            const y as Number = 317;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 335; @symbol_moduledef = [activity_color_dark__text,335,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 335; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 337 18 ]
+                symbol [ Graphics %tmp.90 337 31 39 ];
+                %tmp.90 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.91 337 40 57 ];
+                %tmp.91 = getv %tmp.90 :COLOR_TRANSPARENT;
+                putv self :background %tmp.91;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 336; @position = 18; @symbol_constdef = [color,336,18,23]; @symbol_type<0> = [Number,336,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 337; @position = 18; @symbol_constdef = [background,337,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 340; @symbol_moduledef = [confirmation_input__keep,340,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 340; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 341 18 ]
+                symbol [ WatchUi %tmp.92 341 27 34 ];
+                %tmp.92 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ESC %tmp.93 341 35 42 ];
+                %tmp.93 = getv %tmp.92 :KEY_ESC;
+                putv self :button %tmp.93;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 341; @position = 18; @symbol_constdef = [button,341,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 344; @symbol_moduledef = [prompt_loc__body_with_title,344,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 344; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [x,345,18,19]; @symbol_type<0> = [Number,345,23,29]; ]
+            const x as Number = 42;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 346; @position = 18; @symbol_constdef = [y,346,18,19]; @symbol_type<0> = [Number,346,23,29]; ]
+            const y as Number = 104;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 349; @symbol_moduledef = [system_icon_dark__search,349,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 349; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 350; @position = 18; @symbol_constdef = [filename,350,18,26]; @symbol_type<0> = [String,350,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__search.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 351; @position = 18; @symbol_constdef = [compress,351,18,26]; @symbol_type<0> = [String,351,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 352; @position = 18; @symbol_constdef = [dithering,352,18,27]; @symbol_type<0> = [String,352,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [automaticPalette,353,18,34]; @symbol_type<0> = [String,353,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 354; @position = 18; @symbol_constdef = [packingFormat,354,18,31]; @symbol_type<0> = [String,354,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 357; @symbol_moduledef = [activity_color_light__text,357,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 357; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 359 18 ]
+                symbol [ Graphics %tmp.94 359 31 39 ];
+                %tmp.94 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.95 359 40 57 ];
+                %tmp.95 = getv %tmp.94 :COLOR_TRANSPARENT;
+                putv self :background %tmp.95;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 358; @position = 18; @symbol_constdef = [color,358,18,23]; @symbol_type<0> = [Number,358,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [background,359,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 362; @symbol_moduledef = [confirmation_icon__hint_keep,362,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 362; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 363; @position = 18; @symbol_constdef = [filename,363,18,26]; @symbol_type<0> = [String,363,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 364; @position = 18; @symbol_constdef = [dithering,364,18,27]; @symbol_type<0> = [String,364,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 365; @position = 18; @symbol_constdef = [packingFormat,365,18,31]; @symbol_type<0> = [String,365,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 368; @symbol_moduledef = [system_icon_dark__save,368,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 368; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [filename,369,18,26]; @symbol_type<0> = [String,369,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__save.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 370; @position = 18; @symbol_constdef = [compress,370,18,26]; @symbol_type<0> = [String,370,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 371; @position = 18; @symbol_constdef = [dithering,371,18,27]; @symbol_type<0> = [String,371,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 372; @position = 18; @symbol_constdef = [automaticPalette,372,18,34]; @symbol_type<0> = [String,372,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [packingFormat,373,18,31]; @symbol_type<0> = [String,373,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 376; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,376,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 376; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 377; @position = 18; @symbol_constdef = [exclude,377,18,25]; @symbol_type<0> = [Boolean,377,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 380; @symbol_moduledef = [system_icon_light__search,380,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 380; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 381; @position = 18; @symbol_constdef = [filename,381,18,26]; @symbol_type<0> = [String,381,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__search.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 382; @position = 18; @symbol_constdef = [compress,382,18,26]; @symbol_type<0> = [String,382,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 383; @position = 18; @symbol_constdef = [dithering,383,18,27]; @symbol_type<0> = [String,383,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [automaticPalette,384,18,34]; @symbol_type<0> = [String,384,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 385; @position = 18; @symbol_constdef = [packingFormat,385,18,31]; @symbol_type<0> = [String,385,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 388; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,388,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 388; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [exclude,389,18,25]; @symbol_type<0> = [Boolean,389,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 392; @symbol_moduledef = [system_icon_positive__hint_button_left_top,392,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 392; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 393; @position = 18; @symbol_constdef = [exclude,393,18,25]; @symbol_type<0> = [Boolean,393,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 396; @symbol_moduledef = [system_loc__hint_button_right_bottom,396,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 396; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [x,397,18,19]; @symbol_type<0> = [Number,397,23,29]; ]
+            const x as Number = 332;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 398; @position = 18; @symbol_constdef = [y,398,18,19]; @symbol_type<0> = [Number,398,23,29]; ]
+            const y as Number = 258;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 401; @symbol_moduledef = [confirmation_icon_dark__hint_reject,401,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 401; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [filename,402,18,26]; @symbol_type<0> = [String,402,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [dithering,403,18,27]; @symbol_type<0> = [String,403,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 404; @position = 18; @symbol_constdef = [packingFormat,404,18,31]; @symbol_type<0> = [String,404,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 407; @symbol_moduledef = [confirmation_color_dark__body,407,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 407; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 409 18 ]
+                symbol [ Graphics %tmp.96 409 31 39 ];
+                %tmp.96 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.97 409 40 57 ];
+                %tmp.97 = getv %tmp.96 :COLOR_TRANSPARENT;
+                putv self :background %tmp.97;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [color,408,18,23]; @symbol_type<0> = [Number,408,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [background,409,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 412; @symbol_moduledef = [confirmation_icon_light__hint_confirm,412,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 412; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 413; @position = 18; @symbol_constdef = [filename,413,18,26]; @symbol_type<0> = [String,413,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [dithering,414,18,27]; @symbol_type<0> = [String,414,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [packingFormat,415,18,31]; @symbol_type<0> = [String,415,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 418; @symbol_moduledef = [prompt_color_dark__title,418,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 418; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 420 18 ]
+                symbol [ Graphics %tmp.98 420 31 39 ];
+                %tmp.98 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.99 420 40 57 ];
+                %tmp.99 = getv %tmp.98 :COLOR_TRANSPARENT;
+                putv self :background %tmp.99;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 419; @position = 18; @symbol_constdef = [color,419,18,23]; @symbol_type<0> = [Number,419,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 420; @position = 18; @symbol_constdef = [background,420,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 423; @symbol_moduledef = [system_icon_destructive__cancel,423,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 423; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [filename,424,18,26]; @symbol_type<0> = [String,424,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__cancel.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 425; @position = 18; @symbol_constdef = [dithering,425,18,27]; @symbol_type<0> = [String,425,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 426; @position = 18; @symbol_constdef = [packingFormat,426,18,31]; @symbol_type<0> = [String,426,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 429; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,429,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 429; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [filename,430,18,26]; @symbol_type<0> = [String,430,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [dithering,431,18,27]; @symbol_type<0> = [String,431,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 432; @position = 18; @symbol_constdef = [packingFormat,432,18,31]; @symbol_type<0> = [String,432,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 435; @symbol_moduledef = [prompt_loc__title,435,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 435; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [x,436,18,19]; @symbol_type<0> = [Number,436,23,29]; ]
+            const x as Number = 120;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [y,437,18,19]; @symbol_type<0> = [Number,437,23,29]; ]
+            const y as Number = 20;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 440; @symbol_moduledef = [confirmation_font_enhanced_readability__body,440,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 440; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 441; @position = 18; @symbol_constdef = [exclude,441,18,25]; @symbol_type<0> = [Boolean,441,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 444; @symbol_moduledef = [prompt_color_light__title,444,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 444; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 446 18 ]
+                symbol [ Graphics %tmp.100 446 31 39 ];
+                %tmp.100 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.101 446 40 57 ];
+                %tmp.101 = getv %tmp.100 :COLOR_TRANSPARENT;
+                putv self :background %tmp.101;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 445; @position = 18; @symbol_constdef = [color,445,18,23]; @symbol_type<0> = [Number,445,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [background,446,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 449; @symbol_moduledef = [system_icon_dark__hint_button_right_top,449,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 449; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 450; @position = 18; @symbol_constdef = [filename,450,18,26]; @symbol_type<0> = [String,450,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 451; @position = 18; @symbol_constdef = [dithering,451,18,27]; @symbol_type<0> = [String,451,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 452; @position = 18; @symbol_constdef = [packingFormat,452,18,31]; @symbol_type<0> = [String,452,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 455; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,455,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 455; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 456; @position = 18; @symbol_constdef = [exclude,456,18,25]; @symbol_type<0> = [Boolean,456,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 459; @symbol_moduledef = [confirmation_icon_dark__hint_keep,459,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 459; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 460; @position = 18; @symbol_constdef = [filename,460,18,26]; @symbol_type<0> = [String,460,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [dithering,461,18,27]; @symbol_type<0> = [String,461,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 462; @position = 18; @symbol_constdef = [packingFormat,462,18,31]; @symbol_type<0> = [String,462,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 465; @symbol_moduledef = [system_icon_light__cancel,465,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 465; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [filename,466,18,26]; @symbol_type<0> = [String,466,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__cancel.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [compress,467,18,26]; @symbol_type<0> = [String,467,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 468; @position = 18; @symbol_constdef = [dithering,468,18,27]; @symbol_type<0> = [String,468,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 469; @position = 18; @symbol_constdef = [automaticPalette,469,18,34]; @symbol_type<0> = [String,469,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 470; @position = 18; @symbol_constdef = [packingFormat,470,18,31]; @symbol_type<0> = [String,470,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 473; @symbol_moduledef = [confirmation_icon_light__hint_reject,473,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 473; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 474; @position = 18; @symbol_constdef = [filename,474,18,26]; @symbol_type<0> = [String,474,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [dithering,475,18,27]; @symbol_type<0> = [String,475,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 476; @position = 18; @symbol_constdef = [packingFormat,476,18,31]; @symbol_type<0> = [String,476,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 479; @symbol_moduledef = [system_icon_light__about,479,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 479; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 480; @position = 18; @symbol_constdef = [filename,480,18,26]; @symbol_type<0> = [String,480,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__about.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [compress,481,18,26]; @symbol_type<0> = [String,481,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [dithering,482,18,27]; @symbol_type<0> = [String,482,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [automaticPalette,483,18,34]; @symbol_type<0> = [String,483,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 484; @position = 18; @symbol_constdef = [packingFormat,484,18,31]; @symbol_type<0> = [String,484,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 487; @symbol_moduledef = [system_size__toast_icon,487,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 487; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 488; @position = 18; @symbol_constdef = [scaleX,488,18,24]; @symbol_type<0> = [Number,488,28,34]; ]
+            const scaleX as Number = 56;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 489; @position = 18; @symbol_constdef = [scaleY,489,18,24]; @symbol_type<0> = [Number,489,28,34]; ]
+            const scaleY as Number = 56;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [scaleRelativeTo,490,18,33]; @symbol_type<0> = [String,490,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 493; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,493,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 493; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 494; @position = 18; @symbol_constdef = [exclude,494,18,25]; @symbol_type<0> = [Boolean,494,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 497; @symbol_moduledef = [confirmation_icon__hint_reject,497,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 497; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 498; @position = 18; @symbol_constdef = [filename,498,18,26]; @symbol_type<0> = [String,498,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 499; @position = 18; @symbol_constdef = [dithering,499,18,27]; @symbol_type<0> = [String,499,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 500; @position = 18; @symbol_constdef = [packingFormat,500,18,31]; @symbol_type<0> = [String,500,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 503; @symbol_moduledef = [system_icon_light__hint_action_menu,503,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 503; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [filename,504,18,26]; @symbol_type<0> = [String,504,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__hint_action_menu.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 505; @position = 18; @symbol_constdef = [dithering,505,18,27]; @symbol_type<0> = [String,505,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [packingFormat,506,18,31]; @symbol_type<0> = [String,506,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 509; @symbol_moduledef = [system_icon_light__hint_button_right_middle,509,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 509; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [exclude,510,18,25]; @symbol_type<0> = [Boolean,510,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 513; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,513,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 513; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [exclude,514,18,25]; @symbol_type<0> = [Boolean,514,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 517; @symbol_moduledef = [confirmation_loc__hint_reject,517,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 517; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 518; @position = 18; @symbol_constdef = [x,518,18,19]; @symbol_type<0> = [Number,518,23,29]; ]
+            const x as Number = 208;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 519; @position = 18; @symbol_constdef = [horizontalJustification,519,18,41]; @symbol_type<0> = [String,519,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 520; @position = 18; @symbol_constdef = [y,520,18,19]; @symbol_type<0> = [Number,520,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 523; @symbol_moduledef = [confirmation_icon_dark__hint_delete,523,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 523; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [filename,524,18,26]; @symbol_type<0> = [String,524,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 525; @position = 18; @symbol_constdef = [dithering,525,18,27]; @symbol_type<0> = [String,525,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 526; @position = 18; @symbol_constdef = [packingFormat,526,18,31]; @symbol_type<0> = [String,526,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 529; @symbol_moduledef = [activity_color_dark__background,529,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 529; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [color,530,18,23]; @symbol_type<0> = [Number,530,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 531; @position = 18; @symbol_constdef = [background,531,18,28]; @symbol_type<0> = [Number,531,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 534; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,534,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 534; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 535; @position = 18; @symbol_constdef = [exclude,535,18,25]; @symbol_type<0> = [Boolean,535,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 538; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,538,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 538; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 539; @position = 18; @symbol_constdef = [exclude,539,18,25]; @symbol_type<0> = [Boolean,539,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 542; @symbol_moduledef = [system_size__menu_icon,542,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 542; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 543; @position = 18; @symbol_constdef = [scaleX,543,18,24]; @symbol_type<0> = [Number,543,28,34]; ]
+            const scaleX as Number = 45;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 544; @position = 18; @symbol_constdef = [scaleY,544,18,24]; @symbol_type<0> = [Number,544,28,34]; ]
+            const scaleY as Number = 45;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [scaleRelativeTo,545,18,33]; @symbol_type<0> = [String,545,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 548; @symbol_moduledef = [system_icon_destructive__warning,548,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 548; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 549; @position = 18; @symbol_constdef = [filename,549,18,26]; @symbol_type<0> = [String,549,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__warning.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 550; @position = 18; @symbol_constdef = [dithering,550,18,27]; @symbol_type<0> = [String,550,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 551; @position = 18; @symbol_constdef = [packingFormat,551,18,31]; @symbol_type<0> = [String,551,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 554; @symbol_moduledef = [system_loc__hint_button_right_middle,554,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 554; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [exclude,555,18,25]; @symbol_type<0> = [Boolean,555,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 558; @symbol_moduledef = [system_icon_dark__cancel,558,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 558; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 559; @position = 18; @symbol_constdef = [filename,559,18,26]; @symbol_type<0> = [String,559,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__cancel.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [compress,560,18,26]; @symbol_type<0> = [String,560,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 561; @position = 18; @symbol_constdef = [dithering,561,18,27]; @symbol_type<0> = [String,561,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [automaticPalette,562,18,34]; @symbol_type<0> = [String,562,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 563; @position = 18; @symbol_constdef = [packingFormat,563,18,31]; @symbol_type<0> = [String,563,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 566; @symbol_moduledef = [prompt_size__body_with_title,566,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 566; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 567; @position = 18; @symbol_constdef = [width,567,18,23]; @symbol_type<0> = [Number,567,27,33]; ]
+            const width as Number = 333;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [height,568,18,24]; @symbol_type<0> = [Number,568,28,34]; ]
+            const height as Number = 229;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 571; @symbol_moduledef = [system_loc__hint_button_right_top,571,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 571; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [x,572,18,19]; @symbol_type<0> = [Number,572,23,29]; ]
+            const x as Number = 345;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 573; @position = 18; @symbol_constdef = [y,573,18,19]; @symbol_type<0> = [Number,573,23,29]; ]
+            const y as Number = 67;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 576; @symbol_moduledef = [system_color_light__text,576,15,39]; ]
+        module system_color_light__text {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 576; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 578 18 ]
+                symbol [ Graphics %tmp.102 578 31 39 ];
+                %tmp.102 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.103 578 40 57 ];
+                %tmp.103 = getv %tmp.102 :COLOR_TRANSPARENT;
+                putv self :background %tmp.103;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [color,577,18,23]; @symbol_type<0> = [Number,577,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [background,578,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 581; @symbol_moduledef = [system_icon_light__check,581,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 581; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 582; @position = 18; @symbol_constdef = [filename,582,18,26]; @symbol_type<0> = [String,582,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__check.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 583; @position = 18; @symbol_constdef = [compress,583,18,26]; @symbol_type<0> = [String,583,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [dithering,584,18,27]; @symbol_type<0> = [String,584,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [automaticPalette,585,18,34]; @symbol_type<0> = [String,585,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 586; @position = 18; @symbol_constdef = [packingFormat,586,18,31]; @symbol_type<0> = [String,586,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 589; @symbol_moduledef = [confirmation_input__reject,589,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 589; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 590; @position = 18; @symbol_constdef = [y1,590,18,20]; @symbol_type<0> = [Number,590,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 591; @position = 18; @symbol_constdef = [x1,591,18,20]; @symbol_type<0> = [Number,591,24,30]; ]
+            const x1 as Number = 79;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 592; @position = 18; @symbol_constdef = [y2,592,18,20]; @symbol_type<0> = [Number,592,24,30]; ]
+            const y2 as Number = 70;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [x2,593,18,20]; @symbol_type<0> = [Number,593,24,30]; ]
+            const x2 as Number = 311;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 596; @symbol_moduledef = [system_icon_light__revert,596,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 596; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 597; @position = 18; @symbol_constdef = [filename,597,18,26]; @symbol_type<0> = [String,597,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__revert.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [compress,598,18,26]; @symbol_type<0> = [String,598,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [dithering,599,18,27]; @symbol_type<0> = [String,599,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [automaticPalette,600,18,34]; @symbol_type<0> = [String,600,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [packingFormat,601,18,31]; @symbol_type<0> = [String,601,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 604; @symbol_moduledef = [system_size__subwindow,604,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 604; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [exclude,605,18,25]; @symbol_type<0> = [Boolean,605,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 608; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,608,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 608; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 609; @position = 18; @symbol_constdef = [exclude,609,18,25]; @symbol_type<0> = [Boolean,609,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 612; @symbol_moduledef = [system_icon_dark__check,612,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 612; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [filename,613,18,26]; @symbol_type<0> = [String,613,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__check.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [compress,614,18,26]; @symbol_type<0> = [String,614,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 615; @position = 18; @symbol_constdef = [dithering,615,18,27]; @symbol_type<0> = [String,615,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 616; @position = 18; @symbol_constdef = [automaticPalette,616,18,34]; @symbol_type<0> = [String,616,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [packingFormat,617,18,31]; @symbol_type<0> = [String,617,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 620; @symbol_moduledef = [confirmation_loc__hint_keep,620,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 620; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [x,621,18,19]; @symbol_type<0> = [Number,621,23,29]; ]
+            const x as Number = 313;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [y,622,18,19]; @symbol_type<0> = [Number,622,23,29]; ]
+            const y as Number = 234;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 625; @symbol_moduledef = [confirmation_loc__hint_delete,625,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 625; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [x,626,18,19]; @symbol_type<0> = [Number,626,23,29]; ]
+            const x as Number = 324;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [y,627,18,19]; @symbol_type<0> = [Number,627,23,29]; ]
+            const y as Number = 19;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 630; @symbol_moduledef = [system_icon_positive__hint_action_menu,630,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 630; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 631; @position = 18; @symbol_constdef = [filename,631,18,26]; @symbol_type<0> = [String,631,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_positive__hint_action_menu.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 632; @position = 18; @symbol_constdef = [dithering,632,18,27]; @symbol_type<0> = [String,632,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [packingFormat,633,18,31]; @symbol_type<0> = [String,633,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 636; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,636,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 636; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [exclude,637,18,25]; @symbol_type<0> = [Boolean,637,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 640; @symbol_moduledef = [system_icon_light__hint_button_left_middle,640,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 640; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [exclude,641,18,25]; @symbol_type<0> = [Boolean,641,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 644; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,644,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 644; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 645; @position = 18; @symbol_constdef = [filename,645,18,26]; @symbol_type<0> = [String,645,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 646; @position = 18; @symbol_constdef = [dithering,646,18,27]; @symbol_type<0> = [String,646,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 647; @position = 18; @symbol_constdef = [packingFormat,647,18,31]; @symbol_type<0> = [String,647,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 650; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,650,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 650; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 651; @position = 18; @symbol_constdef = [filename,651,18,26]; @symbol_type<0> = [String,651,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [dithering,652,18,27]; @symbol_type<0> = [String,652,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 653; @position = 18; @symbol_constdef = [packingFormat,653,18,31]; @symbol_type<0> = [String,653,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 656; @symbol_moduledef = [system_icon_dark__revert,656,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 656; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 657; @position = 18; @symbol_constdef = [filename,657,18,26]; @symbol_type<0> = [String,657,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__revert.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [compress,658,18,26]; @symbol_type<0> = [String,658,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [dithering,659,18,27]; @symbol_type<0> = [String,659,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 660; @position = 18; @symbol_constdef = [automaticPalette,660,18,34]; @symbol_type<0> = [String,660,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 661; @position = 18; @symbol_constdef = [packingFormat,661,18,31]; @symbol_type<0> = [String,661,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 664; @symbol_moduledef = [confirmation_icon_light__hint_delete,664,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 664; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 665; @position = 18; @symbol_constdef = [filename,665,18,26]; @symbol_type<0> = [String,665,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 666; @position = 18; @symbol_constdef = [dithering,666,18,27]; @symbol_type<0> = [String,666,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 667; @position = 18; @symbol_constdef = [packingFormat,667,18,31]; @symbol_type<0> = [String,667,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 670; @symbol_moduledef = [system_icon_dark__question,670,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 670; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 671; @position = 18; @symbol_constdef = [filename,671,18,26]; @symbol_type<0> = [String,671,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__question.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 672; @position = 18; @symbol_constdef = [compress,672,18,26]; @symbol_type<0> = [String,672,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 673; @position = 18; @symbol_constdef = [dithering,673,18,27]; @symbol_type<0> = [String,673,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 674; @position = 18; @symbol_constdef = [automaticPalette,674,18,34]; @symbol_type<0> = [String,674,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 675; @position = 18; @symbol_constdef = [packingFormat,675,18,31]; @symbol_type<0> = [String,675,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 678; @symbol_moduledef = [system_icon_light__discard,678,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 678; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 679; @position = 18; @symbol_constdef = [filename,679,18,26]; @symbol_type<0> = [String,679,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__discard.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 680; @position = 18; @symbol_constdef = [compress,680,18,26]; @symbol_type<0> = [String,680,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 681; @position = 18; @symbol_constdef = [dithering,681,18,27]; @symbol_type<0> = [String,681,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 682; @position = 18; @symbol_constdef = [automaticPalette,682,18,34]; @symbol_type<0> = [String,682,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 683; @position = 18; @symbol_constdef = [packingFormat,683,18,31]; @symbol_type<0> = [String,683,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 686; @symbol_moduledef = [device_info,686,15,26]; ]
+        module device_info {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 686; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 688 18 ]
+                symbol [ Toybox %tmp.105 688 32 38 ];
+                %tmp.105 = getv ? :Toybox;
+                symbol [ System %tmp.106 688 39 45 ];
+                %tmp.106 = getv %tmp.105 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.107 688 46 64 ];
+                %tmp.107 = getv %tmp.106 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.107;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 687; @position = 18; @symbol_constdef = [screenWidth,687,18,29]; @symbol_type<0> = [Number,687,33,39]; ]
+            const screenWidth as Number = 416;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 688; @position = 18; @symbol_constdef = [screenShape,688,18,29]; ]
+            const screenShape;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 689; @position = 18; @symbol_constdef = [hasNightMode,689,18,30]; @symbol_type<0> = [Boolean,689,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 690; @position = 18; @symbol_constdef = [hasGpu,690,18,24]; @symbol_type<0> = [Boolean,690,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 691; @position = 18; @symbol_constdef = [screenHeight,691,18,30]; @symbol_type<0> = [Number,691,34,40]; ]
+            const screenHeight as Number = 416;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 692; @position = 18; @symbol_constdef = [hasTouchScreen,692,18,32]; @symbol_type<0> = [Boolean,692,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 693; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,693,18,44]; @symbol_type<0> = [Boolean,693,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 696; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,696,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 696; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 697; @position = 18; @symbol_constdef = [filename,697,18,26]; @symbol_type<0> = [String,697,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 698; @position = 18; @symbol_constdef = [dithering,698,18,27]; @symbol_type<0> = [String,698,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 699; @position = 18; @symbol_constdef = [packingFormat,699,18,31]; @symbol_type<0> = [String,699,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 702; @symbol_moduledef = [prompt_font__body_no_title,702,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 702; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 703 18 ]
+                symbol [ Graphics %tmp.108 703 34 42 ];
+                %tmp.108 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.109 703 43 62 ];
+                %tmp.109 = getv %tmp.108 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.110 703 63 71 ];
+                %tmp.110 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.111 703 72 92 ];
+                %tmp.111 = getv %tmp.110 :TEXT_JUSTIFY_VCENTER;
+                %tmp.112 = bitor %tmp.109 %tmp.111;
+                putv self :justification %tmp.112;
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 704 18 ]
+                symbol [ Graphics %tmp.113 704 25 33 ];
+                %tmp.113 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.114 704 34 43 ];
+                %tmp.114 = getv %tmp.113 :FONT_TINY;
+                putv self :font %tmp.114;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 703; @position = 18; @symbol_constdef = [justification,703,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 704; @position = 18; @symbol_constdef = [font,704,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 707; @symbol_moduledef = [prompt_size__title_icon,707,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 707; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 708; @position = 18; @symbol_constdef = [scaleX,708,18,24]; @symbol_type<0> = [Float,708,28,33]; ]
+            const scaleX as Float = 0.12;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 709; @position = 18; @symbol_constdef = [scaleRelativeTo,709,18,33]; @symbol_type<0> = [String,709,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 712; @symbol_moduledef = [system_icon_dark__warning,712,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 712; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 713; @position = 18; @symbol_constdef = [filename,713,18,26]; @symbol_type<0> = [String,713,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__warning.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 714; @position = 18; @symbol_constdef = [compress,714,18,26]; @symbol_type<0> = [String,714,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 715; @position = 18; @symbol_constdef = [dithering,715,18,27]; @symbol_type<0> = [String,715,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 716; @position = 18; @symbol_constdef = [automaticPalette,716,18,34]; @symbol_type<0> = [String,716,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 717; @position = 18; @symbol_constdef = [packingFormat,717,18,31]; @symbol_type<0> = [String,717,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 720; @symbol_moduledef = [prompt_loc__title_icon,720,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 720; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 721; @position = 18; @symbol_constdef = [x,721,18,19]; @symbol_type<0> = [Number,721,23,29]; ]
+            const x as Number = 208;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 722; @position = 18; @symbol_constdef = [y,722,18,19]; @symbol_type<0> = [Number,722,23,29]; ]
+            const y as Number = 42;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 723; @position = 18; @symbol_constdef = [horizontalJustification,723,18,41]; @symbol_type<0> = [String,723,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 724; @position = 18; @symbol_constdef = [verticalJustification,724,18,39]; @symbol_type<0> = [String,724,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 727; @symbol_moduledef = [prompt_font_enhanced_readability__title,727,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 727; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 728; @position = 18; @symbol_constdef = [exclude,728,18,25]; @symbol_type<0> = [Boolean,728,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 731; @symbol_moduledef = [prompt_color_dark__body,731,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 731; ]
+            <init> {
+[ "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen" 733 18 ]
+                symbol [ Graphics %tmp.115 733 31 39 ];
+                %tmp.115 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.116 733 40 57 ];
+                %tmp.116 = getv %tmp.115 :COLOR_TRANSPARENT;
+                putv self :background %tmp.116;
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 732; @position = 18; @symbol_constdef = [color,732,18,23]; @symbol_type<0> = [Number,732,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 733; @position = 18; @symbol_constdef = [background,733,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 736; @symbol_moduledef = [confirmation_icon__hint_delete,736,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 736; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 737; @position = 18; @symbol_constdef = [filename,737,18,26]; @symbol_type<0> = [String,737,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 738; @position = 18; @symbol_constdef = [dithering,738,18,27]; @symbol_type<0> = [String,738,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 739; @position = 18; @symbol_constdef = [packingFormat,739,18,31]; @symbol_type<0> = [String,739,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 742; @symbol_moduledef = [system_icon_light__hint_button_right_top,742,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 742; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 743; @position = 18; @symbol_constdef = [filename,743,18,26]; @symbol_type<0> = [String,743,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 744; @position = 18; @symbol_constdef = [dithering,744,18,27]; @symbol_type<0> = [String,744,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 745; @position = 18; @symbol_constdef = [packingFormat,745,18,31]; @symbol_type<0> = [String,745,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 748; @symbol_moduledef = [confirmation_size__body,748,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 748; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 749; @position = 18; @symbol_constdef = [width,749,18,23]; @symbol_type<0> = [Number,749,27,33]; ]
+            const width as Number = 246;
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 750; @position = 18; @symbol_constdef = [height,750,18,24]; @symbol_type<0> = [Number,750,28,34]; ]
+            const height as Number = 250;
+        }
+        [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 753; @symbol_moduledef = [system_icon_positive__check,753,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 753; ]
+            <init> {
+            }
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 754; @position = 18; @symbol_constdef = [filename,754,18,26]; @symbol_type<0> = [String,754,30,36]; ]
+            const filename as String = "C:\\Users\\isy\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_positive__check.svg";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 755; @position = 18; @symbol_constdef = [dithering,755,18,27]; @symbol_type<0> = [String,755,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 756; @position = 18; @symbol_constdef = [packingFormat,756,18,31]; @symbol_type<0> = [String,756,35,41]; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "c:\Users\isy\Documents\GitHub\yurounded-garmin-watchface\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

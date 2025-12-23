@@ -1,0 +1,71 @@
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+
+    <string id="AppName">YuRounded</string>
+
+    <string id="BackgroundColorTitle">Cor de Fundo</string>
+    <string id="HourColorTitle">Cor da Hora</string>
+    <string id="MinuteColorTitle">Cor dos Minutos</string>
+    <string id="ShowNotificationIndicatorTitle">Mostrar Indicador de Notificação</string>
+    <string id="ShowBatteryTitle">Mostrar Nível de Bateria</string>
+    <string id="BatteryFontSizeTitle">Tamanho da Fonte da Bateria</string>
+    <string id="BatteryDisplayStyleTitle">Estilo de Exibição da Bateria</string>
+
+    <string id="ColorBlack">Preto</string>
+    <string id="ColorWhite">Branco</string>
+    <string id="ColorOrange">Laranja</string>
+    <string id="ColorBlueGray">Azul Acinzentado</string>
+    <string id="ColorRed">Vermelho</string>
+    <string id="ColorBlue">Azul</string>
+    <string id="ColorGreen">Verde</string>
+    <string id="ColorYellow">Amarelo</string>
+    <string id="ColorPurple">Roxo</string>
+    <string id="ColorPink">Rosa</string>
+    <string id="ColorCyan">Ciano</string>
+    <string id="ColorTeal">Verde-Azulado</string>
+    <string id="ColorLightBlue">Azul Claro</string>
+    <string id="ColorDarkGray">Cinza Escuro</string>
+    <string id="ColorLightGray">Cinza Claro</string>
+    <string id="ColorAuto">Automático</string>
+
+    <string id="FontSizeSmall">Pequeno</string>
+    <string id="FontSizeMedium">Médio</string>
+    <string id="FontSizeLarge">Grande</string>
+
+    <string id="BatteryStylePercentage">Porcentagem (%)</string>
+    <string id="BatteryStyleIcon">Ícone (Barra)</string>
+
+    <!-- Configurações de Bateria -->
+    <string id="BatteryColorTitle">Cor da Bateria</string>
+    <string id="BatteryPositionTitle">Posição da Bateria</string>
+    <string id="BatteryPositionTop">Topo</string>
+    <string id="BatteryPositionMiddle">Meio</string>
+    <string id="BatteryPositionBottom">Embaixo</string>
+
+    <!-- Configurações de Data -->
+    <string id="ShowDateTitle">Mostrar Data</string>
+    <string id="DateFormatTitle">Formato da Data</string>
+    <string id="DatePositionTitle">Posição da Data</string>
+    <string id="DateColorTitle">Cor da Data</string>
+    <string id="DateFormatDayMonth">Dia/Mês</string>
+    <string id="DateFormatMonthDay">Mês/Dia</string>
+    <string id="DateFormatWeekday">Dia da Semana</string>
+    <string id="DateFormatWeekdayShort">Dia da Semana (Curto)</string>
+    <string id="DatePositionTop">Topo</string>
+    <string id="DatePositionBottom">Embaixo</string>
+    <string id="DatePositionLeft">Esquerda</string>
+    <string id="DatePositionRight">Direita</string>
+
+    <!-- Configurações de Segundos -->
+    <string id="ShowSecondsTitle">Mostrar Segundos</string>
+    <string id="SecondsColorTitle">Cor dos Segundos</string>
+
+    <!-- Configurações de Bluetooth -->
+    <string id="ShowBluetoothTitle">Mostrar Indicador Bluetooth</string>
+    <string id="BluetoothPositionTitle">Posição do Bluetooth</string>
+    <string id="BluetoothColorTitle">Cor do Bluetooth</string>
+    <string id="BluetoothPositionTopLeft">Topo Esquerdo</string>
+    <string id="BluetoothPositionTopRight">Topo Direito</string>
+    <string id="BluetoothPositionBottomLeft">Embaixo Esquerdo</string>
+    <string id="BluetoothPositionBottomRight">Embaixo Direito</string>
+
+</strings>
