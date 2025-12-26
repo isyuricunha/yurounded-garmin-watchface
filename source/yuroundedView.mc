@@ -36,6 +36,7 @@ class yuroundedView extends WatchUi.WatchFace {
         var hourColor = Application.Properties.getValue("HourColor") as Number;
         var minuteColor = Application.Properties.getValue("MinuteColor") as Number;
         var timeFormat = Application.Properties.getValue("TimeFormat") as Number;
+        var timeFontSize = Application.Properties.getValue("TimeFontSize") as Number;
         var showNotificationIndicator = Application.Properties.getValue("ShowNotificationIndicator") as Boolean;
         
         // Battery settings
@@ -94,15 +95,50 @@ class yuroundedView extends WatchUi.WatchFace {
         var minutesString = minutes.format("%02d");
 
         // Set font - using largest available system font
-        var largeFont = Graphics.FONT_NUMBER_THAI_HOT;
+        if (timeFontSize == null) {
+            timeFontSize = 0;
+        }
+
+        var largeFont = resolveTimeFont(dc, timeFontSize, width, height, showSeconds);
 
         // Calculate better vertical positioning for centering
         // Move both numbers closer to true center
-        var spacing = 50; // Spacing between hour and minute
+        var shortSide = width;
+        if (height < width) {
+            shortSide = height;
+        }
+
+        var contentPadding = shortSide / 12;
+        var availableHeight = height - (contentPadding * 2);
+
+        var timeFontHeight = dc.getFontHeight(largeFont);
+        var timeGap = timeFontHeight / 6;
+        if (timeGap < 4) {
+            timeGap = 4;
+        }
+
+        var secondsFont = Graphics.FONT_XTINY;
+        var secondsFontHeight = dc.getFontHeight(secondsFont);
+        var secondsGap = secondsFontHeight / 2;
+        if (secondsGap < 2) {
+            secondsGap = 2;
+        }
+
+        var totalTimeBlockHeight = (timeFontHeight * 2) + timeGap;
+        if (showSeconds) {
+            totalTimeBlockHeight += secondsGap + secondsFontHeight;
+        }
+
+        var blockTopY = contentPadding + ((availableHeight - totalTimeBlockHeight) / 2);
+        if (blockTopY < contentPadding) {
+            blockTopY = contentPadding;
+        }
+
+        var spacing = timeGap; // Spacing between hour and minute
         
         // Draw hours (top) - with bold effect by drawing multiple times
         dc.setColor(hourColor, Graphics.COLOR_TRANSPARENT);
-        var hoursY = centerY - spacing; // Position above center
+        var hoursY = blockTopY + (timeFontHeight / 2);
         
         // Draw the hour text multiple times with slight offsets to create a bold effect
         dc.drawText(centerX, hoursY, largeFont, hoursString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
@@ -112,7 +148,7 @@ class yuroundedView extends WatchUi.WatchFace {
 
         // Draw minutes (bottom) - with bold effect
         dc.setColor(minuteColor, Graphics.COLOR_TRANSPARENT);
-        var minutesY = centerY + spacing; // Position below center
+        var minutesY = blockTopY + timeFontHeight + spacing + (timeFontHeight / 2);
         
         // Draw the minute text multiple times with slight offsets to create a bold effect
         dc.drawText(centerX, minutesY, largeFont, minutesString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
@@ -124,8 +160,7 @@ class yuroundedView extends WatchUi.WatchFace {
         if (showSeconds) {
             var seconds = clockTime.sec;
             var secondsString = seconds.format("%02d");
-            var secondsFont = Graphics.FONT_XTINY;
-            var secondsY = minutesY + 55; // Position further below minutes
+            var secondsY = blockTopY + timeFontHeight + spacing + timeFontHeight + secondsGap + (secondsFontHeight / 2);
             
             dc.setColor(secondsColor, Graphics.COLOR_TRANSPARENT);
             dc.drawText(centerX, secondsY, secondsFont, secondsString, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
@@ -355,6 +390,94 @@ class yuroundedView extends WatchUi.WatchFace {
         } else {
             return days[dayOfWeek - 1];
         }
+    }
+
+    function resolveTimeFont(dc as Dc, timeFontSize as Number, width as Number, height as Number, showSeconds as Boolean) as Graphics.FontType {
+        var candidates = getTimeFontCandidates(timeFontSize);
+        for (var i = 0; i < candidates.size(); i++) {
+            var font = candidates[i];
+            if (timeFontFits(dc, font, width, height, showSeconds)) {
+                return font;
+            }
+        }
+
+        return candidates[candidates.size() - 1];
+    }
+
+    function getTimeFontCandidates(timeFontSize as Number) as Array<Graphics.FontType> {
+        var candidates = [] as Array<Graphics.FontType>;
+
+        if (timeFontSize == 0 || timeFontSize == 3) {
+            if (Graphics has :FONT_SYSTEM_NUMBER_HUGE) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_HUGE); }
+            if (Graphics has :FONT_NUMBER_HUGE) { candidates.add(Graphics.FONT_NUMBER_HUGE); }
+            if (Graphics has :FONT_NUMBER_THAI_HOT) { candidates.add(Graphics.FONT_NUMBER_THAI_HOT); }
+        }
+
+        if (timeFontSize == 0 || timeFontSize == 3 || timeFontSize == 2) {
+            if (Graphics has :FONT_SYSTEM_NUMBER_LARGE) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_LARGE); }
+            if (Graphics has :FONT_NUMBER_LARGE) { candidates.add(Graphics.FONT_NUMBER_LARGE); }
+        }
+
+        if (timeFontSize == 0 || timeFontSize == 3 || timeFontSize == 2 || timeFontSize == 1) {
+            if (Graphics has :FONT_SYSTEM_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_MEDIUM); }
+            if (Graphics has :FONT_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_NUMBER_MEDIUM); }
+        }
+
+        if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
+        if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
+
+        candidates.add(Graphics.FONT_LARGE);
+        candidates.add(Graphics.FONT_MEDIUM);
+        candidates.add(Graphics.FONT_SMALL);
+
+        return candidates;
+    }
+
+    function timeFontFits(dc as Dc, font as Graphics.FontType, width as Number, height as Number, showSeconds as Boolean) as Boolean {
+        var shortSide = width;
+        if (height < width) {
+            shortSide = height;
+        }
+
+        var padding = shortSide / 12;
+        var maxWidth = width - (padding * 2);
+        if (maxWidth < 0) {
+            maxWidth = width;
+        }
+
+        var hoursWidth = dc.getTextWidthInPixels("88", font);
+        var minutesWidth = dc.getTextWidthInPixels("88", font);
+        var maxTextWidth = hoursWidth;
+        if (minutesWidth > maxTextWidth) {
+            maxTextWidth = minutesWidth;
+        }
+
+        if (maxTextWidth > maxWidth) {
+            return false;
+        }
+
+        var fontHeight = dc.getFontHeight(font);
+        var gap = fontHeight / 6;
+        if (gap < 4) {
+            gap = 4;
+        }
+
+        var totalHeight = (fontHeight * 2) + gap;
+        if (showSeconds) {
+            var secondsHeight = dc.getFontHeight(Graphics.FONT_XTINY);
+            var secondsGap = secondsHeight / 2;
+            if (secondsGap < 2) {
+                secondsGap = 2;
+            }
+            totalHeight += secondsGap + secondsHeight;
+        }
+
+        var maxHeight = height - (padding * 2);
+        if (maxHeight < 0) {
+            maxHeight = height;
+        }
+
+        return totalHeight <= maxHeight;
     }
 
     // Called when this View is removed from the screen. Save the
