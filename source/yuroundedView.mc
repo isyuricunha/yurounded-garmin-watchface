@@ -35,6 +35,7 @@ class yuroundedView extends WatchUi.WatchFace {
         var backgroundColor = Application.Properties.getValue("BackgroundColor") as Number;
         var hourColor = Application.Properties.getValue("HourColor") as Number;
         var minuteColor = Application.Properties.getValue("MinuteColor") as Number;
+        var timeFormat = Application.Properties.getValue("TimeFormat") as Number;
         var showNotificationIndicator = Application.Properties.getValue("ShowNotificationIndicator") as Boolean;
         
         // Battery settings
@@ -68,8 +69,19 @@ class yuroundedView extends WatchUi.WatchFace {
         var hours = clockTime.hour;
         var minutes = clockTime.min;
 
+        if (timeFormat == null) {
+            timeFormat = 0;
+        }
+
+        var use24Hour = System.getDeviceSettings().is24Hour;
+        if (timeFormat == 1) {
+            use24Hour = true;
+        } else if (timeFormat == 2) {
+            use24Hour = false;
+        }
+
         // Convert to 12-hour format if needed
-        if (!System.getDeviceSettings().is24Hour) {
+        if (!use24Hour) {
             if (hours == 0) {
                 hours = 12;
             } else if (hours > 12) {
