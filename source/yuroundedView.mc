@@ -407,28 +407,55 @@ class yuroundedView extends WatchUi.WatchFace {
     function getTimeFontCandidates(timeFontSize as Number) as Array<Graphics.FontType> {
         var candidates = [] as Array<Graphics.FontType>;
 
-        if (timeFontSize == 0 || timeFontSize == 3) {
+        if (timeFontSize == null) {
+            timeFontSize = 0;
+        }
+
+        if (timeFontSize == 0) {
             if (Graphics has :FONT_SYSTEM_NUMBER_HUGE) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_HUGE); }
             if (Graphics has :FONT_NUMBER_HUGE) { candidates.add(Graphics.FONT_NUMBER_HUGE); }
             if (Graphics has :FONT_NUMBER_THAI_HOT) { candidates.add(Graphics.FONT_NUMBER_THAI_HOT); }
-        }
 
-        if (timeFontSize == 0 || timeFontSize == 3 || timeFontSize == 2) {
             if (Graphics has :FONT_SYSTEM_NUMBER_LARGE) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_LARGE); }
             if (Graphics has :FONT_NUMBER_LARGE) { candidates.add(Graphics.FONT_NUMBER_LARGE); }
-        }
 
-        if (timeFontSize == 0 || timeFontSize == 3 || timeFontSize == 2 || timeFontSize == 1) {
             if (Graphics has :FONT_SYSTEM_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_MEDIUM); }
             if (Graphics has :FONT_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_NUMBER_MEDIUM); }
+
+            if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
+            if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
+
+            candidates.add(Graphics.FONT_LARGE);
+            candidates.add(Graphics.FONT_MEDIUM);
+            candidates.add(Graphics.FONT_SMALL);
+        } else if (timeFontSize == 3) {
+            if (Graphics has :FONT_SYSTEM_NUMBER_LARGE) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_LARGE); }
+            if (Graphics has :FONT_NUMBER_LARGE) { candidates.add(Graphics.FONT_NUMBER_LARGE); }
+
+            if (Graphics has :FONT_SYSTEM_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_MEDIUM); }
+            if (Graphics has :FONT_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_NUMBER_MEDIUM); }
+
+            if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
+            if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
+
+            candidates.add(Graphics.FONT_LARGE);
+            candidates.add(Graphics.FONT_MEDIUM);
+            candidates.add(Graphics.FONT_SMALL);
+        } else if (timeFontSize == 2) {
+            if (Graphics has :FONT_SYSTEM_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_MEDIUM); }
+            if (Graphics has :FONT_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_NUMBER_MEDIUM); }
+
+            if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
+            if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
+
+            candidates.add(Graphics.FONT_MEDIUM);
+            candidates.add(Graphics.FONT_SMALL);
+        } else {
+            if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
+            if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
+
+            candidates.add(Graphics.FONT_SMALL);
         }
-
-        if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
-        if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
-
-        candidates.add(Graphics.FONT_LARGE);
-        candidates.add(Graphics.FONT_MEDIUM);
-        candidates.add(Graphics.FONT_SMALL);
 
         return candidates;
     }
