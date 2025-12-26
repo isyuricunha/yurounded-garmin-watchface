@@ -5,6 +5,12 @@
     <string id="BackgroundColorTitle">Background Color</string>
     <string id="HourColorTitle">Hour Color</string>
     <string id="MinuteColorTitle">Minute Color</string>
+    <string id="TimeFormatTitle">Time Format</string>
+    <string id="TimeFormatSystem">System</string>
+    <string id="TimeFormat24h">24h</string>
+    <string id="TimeFormat12h">12h</string>
+    <string id="TimeFontSizeTitle">Time Size</string>
+    <string id="TimeFontSizeAuto">Auto</string>
     <string id="ShowNotificationIndicatorTitle">Show Notification Indicator</string>
     <string id="ShowBatteryTitle">Show Battery Level</string>
     <string id="BatteryFontSizeTitle">Battery Font Size</string>

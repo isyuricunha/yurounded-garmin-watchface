@@ -3,6 +3,8 @@
     <property id="BackgroundColor" type="number">0x000000</property>
     <property id="HourColor" type="number">0xFF9966</property>
     <property id="MinuteColor" type="number">0x7A93AC</property>
+    <property id="TimeFormat" type="number">0</property>
+    <property id="TimeFontSize" type="number">0</property>
     <property id="ShowNotificationIndicator" type="boolean">true</property>
     
     <!-- Battery Settings -->

@@ -44,6 +44,23 @@
         </settingConfig>
     </setting>
 
+    <setting propertyKey="@Properties.TimeFormat" title="@Strings.TimeFormatTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.TimeFormatSystem</listEntry>
+            <listEntry value="1">@Strings.TimeFormat24h</listEntry>
+            <listEntry value="2">@Strings.TimeFormat12h</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.TimeFontSize" title="@Strings.TimeFontSizeTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.TimeFontSizeAuto</listEntry>
+            <listEntry value="1">@Strings.FontSizeSmall</listEntry>
+            <listEntry value="2">@Strings.FontSizeMedium</listEntry>
+            <listEntry value="3">@Strings.FontSizeLarge</listEntry>
+        </settingConfig>
+    </setting>
+
     <setting propertyKey="@Properties.ShowNotificationIndicator" title="@Strings.ShowNotificationIndicatorTitle">
         <settingConfig type="boolean" />
     </setting>
