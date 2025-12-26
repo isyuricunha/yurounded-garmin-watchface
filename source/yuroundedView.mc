@@ -61,17 +61,6 @@ class yuroundedView extends WatchUi.WatchFace {
         var bluetoothPosition = Application.Properties.getValue("BluetoothPosition") as Number;
         var bluetoothColor = Application.Properties.getValue("BluetoothColor") as Number;
 
-        var shortSide = width;
-        if (height < width) {
-            shortSide = height;
-        }
-
-        var contentPadding = shortSide / 12;
-        var layoutGap = contentPadding / 2;
-        if (layoutGap < 4) {
-            layoutGap = 4;
-        }
-
         // Clear the screen with background color
         dc.setColor(backgroundColor, backgroundColor);
         dc.clear();
@@ -110,74 +99,17 @@ class yuroundedView extends WatchUi.WatchFace {
             timeFontSize = 0;
         }
 
-        var topReserved = 0;
-        var bottomReserved = 0;
-
-        if (showDate) {
-            var dateFontHeight = dc.getFontHeight(Graphics.FONT_XTINY);
-            var dateHalfHeight = dateFontHeight / 2;
-
-            if (datePosition == 0) {
-                var dateBottom = 35 + dateHalfHeight;
-                var topNeed = (dateBottom + layoutGap) - contentPadding;
-                if (topNeed > topReserved) {
-                    topReserved = topNeed;
-                }
-            } else if (datePosition == 1) {
-                var dateTop = (height - 35) - dateHalfHeight;
-                var bottomNeed = (height - (dateTop - layoutGap)) - contentPadding;
-                if (bottomNeed > bottomReserved) {
-                    bottomReserved = bottomNeed;
-                }
-            }
-        }
-
-        if (showBattery && batteryPosition != null) {
-            var batteryBlockHeight;
-            if (batteryDisplayStyle == 1) {
-                if (batteryFontSize == 0) {
-                    batteryBlockHeight = 12;
-                } else if (batteryFontSize == 1) {
-                    batteryBlockHeight = 16;
-                } else {
-                    batteryBlockHeight = 20;
-                }
-            } else {
-                var batteryFont;
-                if (batteryFontSize == 0) {
-                    batteryFont = Graphics.FONT_SMALL;
-                } else if (batteryFontSize == 1) {
-                    batteryFont = Graphics.FONT_MEDIUM;
-                } else {
-                    batteryFont = Graphics.FONT_LARGE;
-                }
-                batteryBlockHeight = dc.getFontHeight(batteryFont);
-            }
-
-            var batteryHalfHeight = batteryBlockHeight / 2;
-            if (batteryPosition == 0) {
-                var batteryBottom = 30 + batteryHalfHeight;
-                var topNeed = (batteryBottom + layoutGap) - contentPadding;
-                if (topNeed > topReserved) {
-                    topReserved = topNeed;
-                }
-            } else if (batteryPosition == 2) {
-                var batteryTop = (height - 30) - batteryHalfHeight;
-                var bottomNeed = (height - (batteryTop - layoutGap)) - contentPadding;
-                if (bottomNeed > bottomReserved) {
-                    bottomReserved = bottomNeed;
-                }
-            }
-        }
-
-        var largeFont = resolveTimeFont(dc, timeFontSize, width, height, showSeconds, contentPadding, topReserved, bottomReserved);
+        var largeFont = resolveTimeFont(dc, timeFontSize, width, height, showSeconds);
 
         // Calculate better vertical positioning for centering
         // Move both numbers closer to true center
-        var availableHeight = height - (contentPadding * 2) - topReserved - bottomReserved;
-        if (availableHeight < 0) {
-            availableHeight = 0;
+        var shortSide = width;
+        if (height < width) {
+            shortSide = height;
         }
+
+        var contentPadding = shortSide / 12;
+        var availableHeight = height - (contentPadding * 2);
 
         var timeFontHeight = dc.getFontHeight(largeFont);
         var timeGap = timeFontHeight / 6;
@@ -197,9 +129,9 @@ class yuroundedView extends WatchUi.WatchFace {
             totalTimeBlockHeight += secondsGap + secondsFontHeight;
         }
 
-        var blockTopY = contentPadding + topReserved + ((availableHeight - totalTimeBlockHeight) / 2);
-        if (blockTopY < contentPadding + topReserved) {
-            blockTopY = contentPadding + topReserved;
+        var blockTopY = contentPadding + ((availableHeight - totalTimeBlockHeight) / 2);
+        if (blockTopY < contentPadding) {
+            blockTopY = contentPadding;
         }
 
         var spacing = timeGap; // Spacing between hour and minute
@@ -460,11 +392,11 @@ class yuroundedView extends WatchUi.WatchFace {
         }
     }
 
-    function resolveTimeFont(dc as Dc, timeFontSize as Number, width as Number, height as Number, showSeconds as Boolean, contentPadding as Number, topReserved as Number, bottomReserved as Number) as Graphics.FontType {
+    function resolveTimeFont(dc as Dc, timeFontSize as Number, width as Number, height as Number, showSeconds as Boolean) as Graphics.FontType {
         var candidates = getTimeFontCandidates(timeFontSize);
         for (var i = 0; i < candidates.size(); i++) {
             var font = candidates[i];
-            if (timeFontFits(dc, font, width, height, showSeconds, timeFontSize, contentPadding, topReserved, bottomReserved)) {
+            if (timeFontFits(dc, font, width, height, showSeconds)) {
                 return font;
             }
         }
@@ -499,33 +431,43 @@ class yuroundedView extends WatchUi.WatchFace {
         } else if (timeFontSize == 3) {
             if (Graphics has :FONT_SYSTEM_NUMBER_LARGE) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_LARGE); }
             if (Graphics has :FONT_NUMBER_LARGE) { candidates.add(Graphics.FONT_NUMBER_LARGE); }
+
             if (Graphics has :FONT_SYSTEM_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_MEDIUM); }
             if (Graphics has :FONT_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_NUMBER_MEDIUM); }
+
             if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
             if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
+
             candidates.add(Graphics.FONT_LARGE);
             candidates.add(Graphics.FONT_MEDIUM);
             candidates.add(Graphics.FONT_SMALL);
         } else if (timeFontSize == 2) {
             if (Graphics has :FONT_SYSTEM_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_MEDIUM); }
             if (Graphics has :FONT_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_NUMBER_MEDIUM); }
+
             if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
             if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
-            candidates.add(Graphics.FONT_LARGE);
+
             candidates.add(Graphics.FONT_MEDIUM);
             candidates.add(Graphics.FONT_SMALL);
         } else {
-            candidates.add(Graphics.FONT_MEDIUM);
-            candidates.add(Graphics.FONT_SMALL);
             if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
             if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
+
+            candidates.add(Graphics.FONT_SMALL);
         }
 
         return candidates;
     }
 
-    function timeFontFits(dc as Dc, font as Graphics.FontType, width as Number, height as Number, showSeconds as Boolean, timeFontSize as Number, contentPadding as Number, topReserved as Number, bottomReserved as Number) as Boolean {
-        var maxWidth = width - (contentPadding * 2);
+    function timeFontFits(dc as Dc, font as Graphics.FontType, width as Number, height as Number, showSeconds as Boolean) as Boolean {
+        var shortSide = width;
+        if (height < width) {
+            shortSide = height;
+        }
+
+        var padding = shortSide / 12;
+        var maxWidth = width - (padding * 2);
         if (maxWidth < 0) {
             maxWidth = width;
         }
@@ -542,11 +484,6 @@ class yuroundedView extends WatchUi.WatchFace {
         }
 
         var fontHeight = dc.getFontHeight(font);
-        var maxFontHeight = getMaxTimeFontHeight(timeFontSize, width, height);
-        if (maxFontHeight != null && fontHeight > maxFontHeight) {
-            return false;
-        }
-
         var gap = fontHeight / 6;
         if (gap < 4) {
             gap = 4;
@@ -562,33 +499,12 @@ class yuroundedView extends WatchUi.WatchFace {
             totalHeight += secondsGap + secondsHeight;
         }
 
-        var maxHeight = height - (contentPadding * 2) - topReserved - bottomReserved;
+        var maxHeight = height - (padding * 2);
         if (maxHeight < 0) {
             maxHeight = height;
         }
 
         return totalHeight <= maxHeight;
-    }
-
-    function getMaxTimeFontHeight(timeFontSize as Number, width as Number, height as Number) as Number? {
-        if (timeFontSize == null || timeFontSize == 0) {
-            return null;
-        }
-
-        var shortSide = width;
-        if (height < width) {
-            shortSide = height;
-        }
-
-        if (timeFontSize == 1) {
-            return (shortSide * 0.20).toNumber();
-        }
-
-        if (timeFontSize == 2) {
-            return (shortSide * 0.28).toNumber();
-        }
-
-        return (shortSide * 0.36).toNumber();
     }
 
     // Called when this View is removed from the screen. Save the
