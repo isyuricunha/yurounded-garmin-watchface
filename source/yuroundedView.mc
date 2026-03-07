@@ -37,6 +37,7 @@ class yuroundedView extends WatchUi.WatchFace {
         var minuteColor = Application.Properties.getValue("MinuteColor") as Number;
         var timeFormat = Application.Properties.getValue("TimeFormat") as Number;
         var timeFontSize = Application.Properties.getValue("TimeFontSize") as Number;
+        var timeVerticalSpacing = Application.Properties.getValue("TimeVerticalSpacing") as Number;
         var showNotificationIndicator = Application.Properties.getValue("ShowNotificationIndicator") as Boolean;
         
         // Battery settings
@@ -75,10 +76,15 @@ class yuroundedView extends WatchUi.WatchFace {
         }
 
         var use24Hour = System.getDeviceSettings().is24Hour;
-        if (timeFormat == 1) {
+        var useLeadingZero = false;
+        
+        if (timeFormat == 1) { // 24h
             use24Hour = true;
-        } else if (timeFormat == 2) {
+        } else if (timeFormat == 2) { // 12h
             use24Hour = false;
+        } else if (timeFormat == 3) { // 24h Leading Zero
+            use24Hour = true;
+            useLeadingZero = true;
         }
 
         // Convert to 12-hour format if needed
@@ -92,6 +98,9 @@ class yuroundedView extends WatchUi.WatchFace {
 
         // Format hours and minutes as strings
         var hoursString = hours.format("%d");
+        if (useLeadingZero) {
+            hoursString = hours.format("%02d");
+        }
         var minutesString = minutes.format("%02d");
 
         // Set font - using largest available system font
@@ -111,8 +120,20 @@ class yuroundedView extends WatchUi.WatchFace {
         var contentPadding = shortSide / 12;
         var availableHeight = height - (contentPadding * 2);
 
+        if (timeVerticalSpacing == null) {
+            timeVerticalSpacing = 0;
+        }
+
         var timeFontHeight = dc.getFontHeight(largeFont);
+        
+        // Calculate gap based on user settings
         var timeGap = timeFontHeight / 6;
+        if (timeVerticalSpacing == 1) { // Wide
+            timeGap = timeFontHeight / 3;
+        } else if (timeVerticalSpacing == 2) { // Ultra Wide
+            timeGap = timeFontHeight / 2;
+        }
+
         if (timeGap < 4) {
             timeGap = 4;
         }
@@ -407,27 +428,35 @@ class yuroundedView extends WatchUi.WatchFace {
     function getTimeFontCandidates(timeFontSize as Number) as Array<Graphics.FontType> {
         var candidates = [] as Array<Graphics.FontType>;
 
-        if (timeFontSize == 0 || timeFontSize == 3) {
+        // 0 = Auto, 1 = Small, 2 = Medium, 3 = Large
+        var useHuge = (timeFontSize == 0 || timeFontSize == 3);
+        var useLarge = (timeFontSize == 0 || timeFontSize == 3 || timeFontSize == 2);
+        var useMedium = (timeFontSize == 0 || timeFontSize == 2 || timeFontSize == 1);
+        var useSmall = (timeFontSize == 0 || timeFontSize == 1);
+
+        if (useHuge) {
             if (Graphics has :FONT_SYSTEM_NUMBER_HUGE) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_HUGE); }
             if (Graphics has :FONT_NUMBER_HUGE) { candidates.add(Graphics.FONT_NUMBER_HUGE); }
             if (Graphics has :FONT_NUMBER_THAI_HOT) { candidates.add(Graphics.FONT_NUMBER_THAI_HOT); }
         }
 
-        if (timeFontSize == 0 || timeFontSize == 3 || timeFontSize == 2) {
+        if (useLarge) {
             if (Graphics has :FONT_SYSTEM_NUMBER_LARGE) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_LARGE); }
             if (Graphics has :FONT_NUMBER_LARGE) { candidates.add(Graphics.FONT_NUMBER_LARGE); }
         }
 
-        if (timeFontSize == 0 || timeFontSize == 3 || timeFontSize == 2 || timeFontSize == 1) {
+        if (useMedium) {
             if (Graphics has :FONT_SYSTEM_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_SYSTEM_NUMBER_MEDIUM); }
             if (Graphics has :FONT_NUMBER_MEDIUM) { candidates.add(Graphics.FONT_NUMBER_MEDIUM); }
         }
 
-        if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
-        if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
+        if (useSmall) {
+            if (Graphics has :FONT_SYSTEM_NUMBER) { candidates.add(Graphics.FONT_SYSTEM_NUMBER); }
+            if (Graphics has :FONT_NUMBER) { candidates.add(Graphics.FONT_NUMBER); }
+        }
 
-        candidates.add(Graphics.FONT_LARGE);
-        candidates.add(Graphics.FONT_MEDIUM);
+        if (timeFontSize == 0 || timeFontSize == 3) { candidates.add(Graphics.FONT_LARGE); }
+        if (timeFontSize == 0 || timeFontSize == 2) { candidates.add(Graphics.FONT_MEDIUM); }
         candidates.add(Graphics.FONT_SMALL);
 
         return candidates;

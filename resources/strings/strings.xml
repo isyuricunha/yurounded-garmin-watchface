@@ -8,9 +8,14 @@
     <string id="TimeFormatTitle">Time Format</string>
     <string id="TimeFormatSystem">System</string>
     <string id="TimeFormat24h">24h</string>
+    <string id="TimeFormat24hLeadingZero">24h (Leading Zero)</string>
     <string id="TimeFormat12h">12h</string>
     <string id="TimeFontSizeTitle">Time Size</string>
     <string id="TimeFontSizeAuto">Auto</string>
+    <string id="TimeVerticalSpacingTitle">Time Vertical Spacing</string>
+    <string id="SpacingNormal">Normal</string>
+    <string id="SpacingWide">Wide</string>
+    <string id="SpacingUltraWide">Ultra Wide</string>
     <string id="ShowNotificationIndicatorTitle">Show Notification Indicator</string>
     <string id="ShowBatteryTitle">Show Battery Level</string>
     <string id="BatteryFontSizeTitle">Battery Font Size</string>

@@ -5,6 +5,7 @@
     <property id="MinuteColor" type="number">0x7A93AC</property>
     <property id="TimeFormat" type="number">0</property>
     <property id="TimeFontSize" type="number">0</property>
+    <property id="TimeVerticalSpacing" type="number">0</property>
     <property id="ShowNotificationIndicator" type="boolean">true</property>
     
     <!-- Battery Settings -->

@@ -49,6 +49,7 @@
             <listEntry value="0">@Strings.TimeFormatSystem</listEntry>
             <listEntry value="1">@Strings.TimeFormat24h</listEntry>
             <listEntry value="2">@Strings.TimeFormat12h</listEntry>
+            <listEntry value="3">@Strings.TimeFormat24hLeadingZero</listEntry>
         </settingConfig>
     </setting>
 
@@ -58,6 +59,14 @@
             <listEntry value="1">@Strings.FontSizeSmall</listEntry>
             <listEntry value="2">@Strings.FontSizeMedium</listEntry>
             <listEntry value="3">@Strings.FontSizeLarge</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.TimeVerticalSpacing" title="@Strings.TimeVerticalSpacingTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.SpacingNormal</listEntry>
+            <listEntry value="1">@Strings.SpacingWide</listEntry>
+            <listEntry value="2">@Strings.SpacingUltraWide</listEntry>
         </settingConfig>
     </setting>
 
